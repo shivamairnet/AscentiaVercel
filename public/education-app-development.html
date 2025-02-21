@@ -2,40 +2,49 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "pt455c4tmg");
+    </script>
+    
     <!-- Google Tag Manager -->
-<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T9LKBG87');</script> -->
+    })(window,document,'script','dataLayer','GTM-T9LKBG87');</script>
     <!-- End Google Tag Manager →
     
     
     
     <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJX989Q7PY"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VJX989Q7PY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
       gtag('config', 'G-VJX989Q7PY');
-    </script> -->
+    </script>
     
-    <link rel="canonical" href="https://ascentialabs.com/library-management-system">
 
+    <link rel="canonical" href="https://ascentialabs.com/education-app-development">
+    
     <!-- Basic -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>Best Library Management System | Custom LMS App & Software Solutions</title>
+    <title>Ed-Tech & eLearning Software Development Company</title>
 
-    <meta name="keywords" content="Library Management Software, Library Management Software Solutions, Library Management System Apps" />
+    <meta name="keywords" content="Education App, eLearning App Development, LMS, Mobile App Development" />
     <meta name="description"
-        content="Optimize your library operations with our cutting-edge Library Management App & Software Development solutions.">
+        content="We build robust eLearning apps, custom education mobile apps, and LMS platforms using advanced technologies to transform the learning environment.">
     <meta name="author" content="">
-    <meta name= "robots" content="noindex, nofollow">
+    <meta name= "robots" content="index, follow">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/fav-icon.png" type="image/x-icon" />
@@ -77,11 +86,10 @@
 
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/mymodal.css">
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
-    <script src="js/demos/library.js"></script>
+    <script src="js/demos/education.js"></script>
 
     <!-- Email.js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -145,7 +153,7 @@
     border: 1px solid #ddd;
     border-radius: 30px !important;
     width: 345px;
-    height: 385px;
+    height: 360px;
     margin: auto;
     padding: 15px;
     background-color: #fff;
@@ -171,15 +179,11 @@
 
 @media (max-width: 768px) {
     .responsive-background {
-    background-image: url('img/Allindustry/Complaint\ Management\ System\ -\ Custom\ CRM\ \(Industry\ Page\)/Complaint Management Header.jpg');
+    background-image: url('img/Allindustry/Education\ \(Industry\ Page\)/Education Header.jpg');
     height: 290px;
     background-size: cover;
     background-repeat: no-repeat;
   }
-
-  .custom-height{
-        height: 255px;
-    }
 }
     </style>
     <script src="js/demos/emailjs.js"></script>
@@ -206,7 +210,236 @@
             }
         }
 
-        .mobile-btn:hover,
+
+        .open-modal-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.open-modal-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+}
+
+.popup-content {
+    display: flex;
+    min-height: 500px;
+}
+
+/* Form Section Styles */
+.form-section {
+    flex: 1;
+    padding: 40px;
+}
+
+.form-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.form-section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #2563eb;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Content Section Styles */
+.content-section {
+    flex: 1;
+    background:black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.highlight-blue {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.laptop-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.laptop-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .popup-content {
+        flex-direction: column;
+    }
+    
+    .content-section {
+        padding: 20px;
+    }
+    
+    .form-section {
+        padding: 20px;
+    }
+    .custom-height{
+        height: 255px;
+    }
+}
+
+#fullName:focus {
+  border-color: #007BFF; /* Border color on focus (click) */
+  outline: none; /* Optional: removes the default outline on focus */
+}
+
+
+#email:focus, #phone:focus, #message:focus {
+  border-color: #007BFF; /* Border color on focus (click) */
+  outline: none; /* Optional: removes the default outline on focus */
+}
+
+
+.mobile-btn:hover,
 .mobile-btn:focus {
   color: black;
   text-decoration: none;
@@ -248,6 +481,9 @@
 
 
 
+
+
+
     </style>
 
 </head>
@@ -258,11 +494,9 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     
-  
     
 
     <div class="body">
-
         <header id="header" class="header-effect-shrink "
         data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 90}">
         <div class="header-body border-top-0 header-shadow">
@@ -385,7 +619,7 @@
                                                     </div>
                                             
                                                     <!-- Right Section -->
-                                                    <div class="extra-content p-3 text-center" style="flex: 1; background-image: url('img/Header/Services Header Icons/Services Header Icons/Header CTA.png');background-size: cover;background-position: center; border-left: 1px solid #ddd; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 0 0 15px 0;">
+                                                    <div class="extra-content p-3 text-center" style="flex: 1; background-image: url('img/Header/Services Header Icons/Services Header Icons/Header CTA.png');background-size: cover;background-position: center; border-left: 1px solid #ddd; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 0 15px 15px 0;">
                                                         <p class="font-weight-bold" style="color: white;line-height: normal;font-size: 24px;">Designed for <span style="color: #0053ce;"> <br>Success</span></p>
                                                         <p style="color: white;">Our services evolve your ideas into scalable, impactful solutions.</p>
                                                         <button 
@@ -418,7 +652,7 @@
                                                 <a class="dropdown-item dropdown-toggle industriesToggle active"  style="cursor: pointer;">
                                                     Industries
                                                 </a>
-                                                <ul class="dropdown-menu d-none d-lg-flex" style="width: 1100px; border-radius: 15px !important; height: 230px; display: flex; justify-content: center;padding: 0px; align-items: center;position: absolute; right: -350px;">
+                                                <ul class="dropdown-menu d-none d-lg-flex" style="width: 1150px; border-radius: 15px !important; height: 230px; display: flex; justify-content: center;padding: 0px; align-items: center;position: absolute; right: -350px;">
                                                     <div class="row py-2 ps-3" style="flex: 2;">
                                                         <div class="col-lg-4 " style="font-size: 14px;">
                                             
@@ -499,7 +733,7 @@
                                                         </div>
                                                     </div>
                                                       <!-- Right Section -->
-                                                      <div class="extra-content p-3 text-center" style="flex: 1; background-image: url('img/Header/Industry Header Icons/CTA (5).png');background-size: cover;background-position: center; border-left: 1px solid #ddd; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 0 0 15px 0;">
+                                                      <div class="extra-content text-center" style="flex: 1; background-image: url('img/Header/Industry Header Icons/CTA (5).png');background-size: cover;background-position: center; border-left: 1px solid #ddd; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 0 15px 15px 0;padding: 0.85rem !important;">
                                                         <p class="font-weight-bold" style="color: white;font-size: 24px;line-height: normal;">Crafted for <br> <span style="color: #0053ce;">Excellence</span></p>
                                                         <p style="color: white;">We craft personalized solutions across industries. To know more, consult with our industry experts today!</p>
                                                         <button 
@@ -710,15 +944,16 @@
                 <div class="responsive-background" >
                     <div class="row mx-2 my-3 text-center mb-3">
                         <div class="mt-5 text-center">
-                            <h2 class="appear-animation mb-1 text-light text-dark font-weight-bold"
+                            <h2 class="appear-animation mb-1 text-center text-light font-weight-bold"
                                 data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"
-                                style="font-size: 27px; text-align: center;">Library Management System
+                                style="font-size: 27px; text-align: center;">Education App Development
                             </h2>
                         </div>
-                        <div class=" text-center">
+                        <div class="text-center">
                             <h4 class="appear-animation text-center text-light mb-2"
                                 data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400"
-                                style="font-size: 16px; text-align: center;"> Where Every Book Finds It’s Digital Home!
+                                style="font-size: 16px; text-align: center;">Elevate School Success With Our State-of-the-Art School CRM Software!
+
 
 
                             </h4>
@@ -747,6 +982,7 @@
                                 <!-- Form Section -->
                                 <div class="form-section">
                                     <div id="contactFormmobile"></div>
+
                                 </div>
                 
                                 <!-- Content Section -->
@@ -757,6 +993,7 @@
                           </div>
                   </div>
 
+
                 <!-- <div class="card m-2 mt-5">
                     <img src="img/real-estate/Real Estate section-1(mobile).webp" alt="real-estate"
                         style="height: 240px; border-radius: 10px;">
@@ -764,34 +1001,33 @@
             </section>
 
             <section class="real-estate-section-1 d-md-block d-none"
-                style="background-image: url('img/Allindustry/libraray/Library\ Header\ \(1\).jpg');" aria-label=" Image of a person and of an elusion of a real estate house on his hand">
+                style="background-image: url('img/Allindustry/Education\ \(Industry\ Page\)/Education Header.jpg');" aria-label=" Image of a person and of an elusion of a real estate house on his hand">
                 <div class="container-fluid">
                     <div class="text-center row">
-                        <div style="margin-top: 6rem;">                        
+                        <div style="margin-top: 7rem;">
                         <div class="pt-5">
-                            <h1 class="appear-animation m-0 text-color-light" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="200" style="color: #000;">Library Management System
+                            <h1 class="appear-animation m-0 text-color-light"  data-appear-animation="fadeInRightShorter"
+                                data-appear-animation-delay="200" style="color: #000;"> Education App Development
+
                             </h1>
                         </div>
                         <div class="mt-2">
-                            <h4 class="appear-animation text-color-light"  data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="400" style="color: #000;">  Where Every Book Finds It’s Digital Home!
-
+                            <h4 class="appear-animation text-color-light" data-appear-animation="fadeInRightShorter"
+                                data-appear-animation-delay="400" style="color: #000;">Elevate School Success With Our State-of-the-Art School CRM Software!
 
                                
                             </h4>
                         </div>
-                    </div>
                         <div class="text-center mt-2">
                             <div class="overflow-hidden">
                                 <button type="button"
                                 id="openModalBtn"
-                                class="btn btn-primary custom-button btn-outline text-color-light font-weight-semibold border-width-4 custom-link-effect-1 text-1 text-xl-3 d-inline-flex align-items-center  appear-animation py-3 px-4"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                data-appear-animation="maskRight" data-appear-animation-delay="600"
-                                style="color: white;background: linear-gradient(90deg, #0052CD 0%, #000000 100%);border-radius: 25px !important;border: none;">
-                                Get Free Consultation
-                            </button>
+                                    class="btn btn-primary custom-button btn-outline text-color-light font-weight-semibold border-width-4 custom-link-effect-1 text-1 text-xl-3 d-inline-flex align-items-center  appear-animation py-3 px-4"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    data-appear-animation="maskRight" data-appear-animation-delay="600"
+                                    style="color: white;background: linear-gradient(90deg, #0052CD 0%, #000000 100%);border-radius: 25px !important;border: none;">
+                                    Get Free Consultation
+                                </button>
                             </div>
 
                             <!-- Modal -->
@@ -805,6 +1041,7 @@
                                             <!-- Form Section -->
                                             <div class="form-section">
                                                 <div id="contactFormContainer"></div>
+
                                             </div>
                             
                                             <!-- Content Section -->
@@ -829,7 +1066,9 @@
                                 </div>
                                       </div>
                               </div>
+
                         </div>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -837,13 +1076,13 @@
             <section class="px-lg-2 mx-lg-2 pb-lg-3 mt-5 pt-lg-5">
                 <div class=" text-center mb-5 px-2">
                     <h2 class="appear-animation d-none d-md-block" data-appear-animation="fadeInRightShorter"
-                        data-appear-animation-delay="200" style="font-weight: 600; color: black; font-size: 40px;">Key Features In Our Library Management System</h2>
+                        data-appear-animation-delay="200" style="font-weight: 600; color: black; font-size: 40px;"> Key Features In Your School CRM Portal</h2>
                     <h2 class="appear-animation d-block d-md-none" data-appear-animation="fadeInRightShorter"
-                        data-appear-animation-delay="200" style="font-weight: 600; color: black; font-size: 24px;padding-top: 15px;">Key Features In Our Library Management System</h2>
-                    <h4 class="appear-animation mx-1 d-none d-md-block" data-appear-animation="fadeInRightShorter"
-                        data-appear-animation-delay="400" style="font-size: 20px;"> Unleash your library business potential with our dynamic feature of Library Management system, or <br class="d-none d-md-block"> if you want to  add some of your own library business features, don't worry, we'll do it for you.</h4>
-                    <h4 class="appear-animation mx-1 d-block d-md-none" data-appear-animation="fadeInRightShorter"
-                        data-appear-animation-delay="400" style="font-size: 18px;"> Unleash your library business potential with our dynamic feature of Library Management system, or <br class="d-none d-md-block"> if you want to  add some of your own library business features, don't worry, we'll do it for you.</h4>
+                        data-appear-animation-delay="200" style="font-weight: 600; color: black; font-size: 24px; padding-top: 15px;"> Key Features In Your School CRM Portal</h2>
+                    <h4 class="appear-animation mx-1 d-none d-md-block" style="font-size: 20px;" data-appear-animation="fadeInRightShorter"
+                        data-appear-animation-delay="400"> Empower teachers, engage students & improve your educational institution result with our state-of-the-art  <br class="d-none d-md-block">  School  CRM, or  if you want to add some features of your own,  don't worry, we'll do it for you.</h4>
+                    <h4 class="appear-animation mx-1 d-block d-md-none" style="font-size: 18px;" data-appear-animation="fadeInRightShorter"
+                        data-appear-animation-delay="400"> Empower teachers, engage students & improve your educational institution result with our state-of-the-art  <br class="d-none d-md-block">  School  CRM, or  if you want to add some features of your own,  don't worry, we'll do it for you.</h4>
                 </div>
                 <div class="d-md-block d-none">
                 <div class="row" style="border: 5px solid rgba(0, 82, 205, 1); border-radius: 20px;margin: auto;width: 1000px;">
@@ -855,60 +1094,75 @@
                             <li style="color: white;" onclick="selectListItem(this)">
                                 <span style="color: #0052CD; font-weight: bold; font-size: 17px; vertical-align: top">01. </span>
                                 <span style="text-decoration: underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block; align-items: center;">
-                                    Digital Library Management
+                                    Digitized Admission Process
                                     <!-- <span style="display: block;">Development</span> -->
                                 </span>
                             </li>
                             <li style="color: white;" onclick="selectListItem(this)">
                                 <span style="color: #0052CD; font-weight: bold; font-size: 17px; vertical-align: top">02. </span>
                                 <span style="text-decoration: underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block; align-items: center;">
-                                    Search & Discovery
-                                    <!-- <span style="display: block;"> Management</span> -->
+                                    Student Academic Portfolio 
+                                    <span style="display: block;">Management</span>
                                 </span>
                             </li>
                             <li style="color: white;" onclick="selectListItem(this)">
                                 <span style="color: #0052CD; font-weight: bold; font-size: 17px; vertical-align: top">03. </span>
                                 <span style="text-decoration: underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block; align-items: center;">
-                                    Library Catalog Management 
-                                    <!-- <span style="display: block;">Integration</span> -->
+                                    Dynamic Fee Heads & Fee  
+                                    <span style="display: block;">Tracking Module </span>
                                 </span>
                             </li>
                              
                              <li style="color: white;" onclick="selectListItem(this)"><span
-                                style="color:#0052CD; font-weight:bold;font-size:17px;vertical-align: top;">04. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block;align-items: center;
-                            ">Reservation & Hold Management
-                            <!-- <span style="display: block;">System</span> -->
-                            </span>
+                                style="color:#0052CD; font-weight:bold;font-size:17px">04. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;
+                            ">Student Tracking Module</span>
                             </li>
                             <li style="color: white;" onclick="selectListItem(this)">
                                 <span style="color: #0052CD; font-weight: bold; font-size: 17px; vertical-align: top">05. </span>
                                 <span style="text-decoration: underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block; align-items: center;">
-                                    Membership Plan Management  
+                                    Bus Management Module 
                                     <!-- <span style="display: block;">Generator</span> -->
                                 </span>
                             </li>
                            
                             <li style="color: white;" onclick="selectListItem(this)"><span
-                                style="color:#0052CD; font-weight:bold;font-size:17px;vertical-align: top;">06. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;display: inline-block;align-items: center;
-                            ">Online & Secure Payment</span>
+                                style="color:#0052CD; font-weight:bold;font-size:17px;vertical-align: top;">06. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block; align-items: center;
+                            ">Subjects & Curriculum 
+                            <span style="display: block;">Development</span>
+                            </span>
                             </li>
                             <li style="color: white;" onclick="selectListItem(this)">
                                 <span style="color: #0052CD; font-weight: bold; font-size: 17px; vertical-align: top">07. </span>
                                 <span style="text-decoration: underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block; align-items: center;">
-                                    Automated Notifications
+                                    Digital Library Management
                                     <!-- <span style="display: block;">Application</span> -->
                                 </span>
                             </li>
-                          <li style="color: white;" onclick="selectListItem(this)">
-                            <span style="color: #0052CD; font-weight: bold; font-size: 17px; vertical-align: top">08. </span>
-                            <span style="text-decoration: underline; text-decoration-color: #0052CD; text-underline-offset: 5px; display: inline-block; align-items: center;">
-                                Reporting & Analytics
-
-                                <!-- <span style="display: block;">Management</span> -->
-                                <!-- <span style="display: block;">Management</span> -->
-                            </span>
-                        </li>
-                       
+                           
+                            <li style="color: white;" onclick="selectListItem(this)"><span
+                                style="color:#0052CD; font-weight:bold;font-size:17px">08. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;
+                            ">Examination Management</span>
+                          </li>
+                            <li style="color: white;" onclick="selectListItem(this)"><span
+                                style="color:#0052CD; font-weight:bold;font-size:17px">09. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;
+                            ">Staff Management Module</span>
+                          </li>
+                            <li style="color: white;" onclick="selectListItem(this)"><span
+                                style="color:#0052CD; font-weight:bold;font-size:17px">10. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;
+                            ">Human Resource Management</span>
+                          </li>
+                            <li style="color: white;" onclick="selectListItem(this)"><span
+                                style="color:#0052CD; font-weight:bold;font-size:17px;vertical-align: top;">11. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;display: inline-block;align-items: center;
+                            ">Integrated Parent, Teacher & <span style="display: block;">Student Mobile App</span></span>
+                          </li>
+                            <li style="color: white;" onclick="selectListItem(this)"><span
+                                style="color:#0052CD; font-weight:bold;font-size:17px">12. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;
+                            ">Integrated Media App Module</span>
+                          </li>
+                            <li style="color: white;" onclick="selectListItem(this)"><span
+                                style="color:#0052CD; font-weight:bold;font-size:17px">13. </span><span style="text-decoration:underline; text-decoration-color: #0052CD; text-underline-offset: 5px;
+                            ">Communication Module</span>
+                          </li>
                           
                         </ul>
                         <div class="column-divider" style="position: absolute; margin-right:20px"></div>
@@ -922,10 +1176,11 @@
                         </div>
                         <div class=" text-dark" id="paragraph" style="font-size:19px; padding-left: 0px; ">
                             <ul cloass="" style="padding: 0px;">
-                                <li>Our digital library management system allows librarians to store and manage digital assets like eBooks, audiobooks, and multimedia files. </li>
-                                    <li>Our system supports various digital formats for seamless accessibility across devices.</li>
-                                    <li>Integrated analytics provide insights into usage patterns, aiding informed resource allocation and collection development.</li>
-                                   
+                                <li> Streamline the academic admission process with our platform, from initial inquiry and appointment booking to final registration.
+                                </li>
+                                <li> Admission staff can easily manage student documents and track applications, while students benefit from secure online payment options for fees like prospectus, application, and admission.</li>
+                                <li>Optimize efficiency and simplify your admissions process with our user-friendly system.</li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -937,17 +1192,16 @@
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10twelve">
-                                        <i class="fa-solid fa-building"></i>Digital Library Management 
+                                        <i class="fa-solid fa-building"></i>Digitized Admission Process
                                     </a>
                                 </h4>
                             </div>
-                            <div id="collapse10twelve" class="collapse" data-bs-parent="#accordion10">
+                            <div id="collapse10twelve" class="collapse " data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li>Our digital library management system allows librarians to store and manage digital assets like eBooks, audiobooks, and multimedia files. </li>
-                                    <li>Our system supports various digital formats for seamless accessibility across devices.</li>
-                                    <li>Integrated analytics provide insights into usage patterns, aiding informed resource allocation and collection development.</li>
-                                       
+                                        <li>Streamline the academic admission process with our platform, from initial inquiry and appointment booking to final registration.</li>
+                                        <li> Admission staff can easily manage student documents and track applications, while students benefit from secure online payment options for fees like prospectus, application, and admission. </li>
+                                        <li> Optimize efficiency and simplify your admissions process with our user-friendly system.</li>
                                     </ul>   
                                 </div>
                             </div>
@@ -956,18 +1210,16 @@
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Thirteen">
-                                        <i class="fa-solid fa-building-user"></i> Search & Discovery
+                                        <i class="fa-solid fa-building-user"></i> Student Academic Portfolio Management
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapse10Thirteen" class="collapse" data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li>Our library management system's search and discovery tools features a robust search engine for keyword and advanced queries, including Boolean operators and filters for genre, author, date, and format. </li>
-                                        <li> Our system can suggest personalized suggestions based on user activity and borrowing history to enhance user engagement.</li>
-                                        <li> Visual search capabilities, like uploading book cover photos and previews, make discovering resources more engaging and accessible.</li>
-                                             
-                                    </ul>   
+                                        <li> Our School CRM streamlines student academic management by organizing portfolios, lesson plans, and tracking progress. </li>
+                                        <li> Teachers can assign activities, monitor attendance, manage homework, assignments, and input assessments for personalized learning.</li>
+                                        <li> Parents can access real-time updates on their child’s academic progress, lesson plans, homework, assignments, and achievements through the school app.</li>                                    </ul>   
                                 </div>
                             </div>
                         </div>
@@ -975,35 +1227,52 @@
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Six">
-                                        <i class="fa-solid fa-code text-color-light"></i>Library Catalog Management
+                                        <i class="fa-solid fa-code text-color-light"></i>Dynamic Fee Heads & Fee Tracking Module
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapse10Six" class="collapse" data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li>The catalog management tool in our library management system lets admins create and update catalog records for items like books, periodicals, DVDs, and digital resources.</li>
-                                        <li>Features such as effective indexing and keyword tagging enhance the searchability and quick access of the books.</li> 
-                                        <li>System also tracks item statuses such as availability, checked-out dates, or reservations, manages special collections, and supports batch processing for efficient data handling.</li></ul>   
+                                        <li>Our School CRM simplifies student finances with a Dynamic Fee Head feature, allowing admins to customize fee structures for classes, batches, or individual students.</li>
+                                        <li>Create and manage various fee types like registration, brochure, tuition, admission, quarterly, semester fees, and more, ensuring flexibility and streamlined financial management.</li>
+                                    </ul>   
                                 </div>
                             </div>
                         </div>
-                        
+                        <div class="mt-2 card-default"   style="  border-color: transparent;">
+                            <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A); ">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Two">
+                                        <i class="fa-solid fa-robot text-color-light"></i> Student Tracking Module
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10Two" class="collapse" data-bs-parent="#accordion10">
+                                <div class="card-body pe-0 ps-4 py-2">
+                                    <ul class="" style="padding: 0px;">
+                                        <li>Our student tracking module enhances security and convenience with QR code-based attendance, real-time facial detection for parental awareness, and a Pick-Up/Drop-Off feature that requires guardians to scan a QR code before collecting their child.</li> 
+                                        <li> Integrated with a Bus Management Module, which allows administrators and parents to track the real-time location of school buses and contact drivers, ensuring safety at every step.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="mt-2 card-default"   style="  border-color: transparent;">
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Three">
-                                        <i class="fa-brands fa-codepen text-color-light"></i> Reservation & Hold Management
+                                        <i class="fa-brands fa-codepen text-color-light"></i> Bus Management Module
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapse10Three" class="collapse" data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li> The reservation and hold management tool in our library management system enables patrons to place reservations on checked-out items, ensuring priority access once available. </li>
-                                            <li> Automated reminders via email or SMS notify patrons when reserved items are ready for collection, reducing wait times.</li> 
-                                            <li>Librarians can efficiently manage and prioritize holds, track reservation statuses, and handle adjustments, cancellations, or reservation updates seamlessly.
-                                            </li>
+                                        <li>Our Bus Management Module enables administrators to optimize bus routes, schedules, and stops for safe and reliable student transportation.
+                                        </li>
+                                        <li> It allows easy planning and adjustment of routes based on student locations, traffic patterns, and capacity limits.</li>
+                                        <li>The module also ensures seamless communication with parents and administrators through notifications and alerts about bus schedule changes or delays.
+                                        </li>
                                     </ul>   
                                 </div>
                             </div>
@@ -1012,16 +1281,18 @@
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Four">
-                                        <i class="fas fa-layer-group text-color-light"></i>Membership Plan Management 
+                                        <i class="fas fa-layer-group text-color-light"></i> Subjects & Curriculum Development
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapse10Four" class="collapse" data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li>The Membership Plan Management tool allows libraries to create and manage tailored membership plans for different user groups, such as Students, Adults, Seniors, and Corporate Members. </li>
-                                           <li> Libraries can set borrowing limits, lending terms, and access privileges based on membership types.</li> 
-                                            <li>The system simplifies new user registration and membership renewals while sending automated reminders for renewals and overdue payments, ensuring seamless patron engagement and library management.
+                                        <li>Our Subjects & Curriculum Management module empowers teachers and administrators to define and manage curriculum, courses, and academic programs.
+                                        </li>
+                                        <li>O Admins and teachers can easily create and edit lesson plans with clear learning objectives.
+                                        </li>
+                                        <li> The module also helps track course curriculum coverage, ensuring seamless coordination of lesson plans and teacher assignments, ultimately improving teaching effectiveness.
                                         </li>
                                     </ul>
                                 </div>
@@ -1031,17 +1302,16 @@
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Five">
-                                        <i class="fa-solid fa-ticket text-color-light"></i>Online & Secure Payment
+                                        <i class="fa-solid fa-ticket text-color-light"></i>Digital Library Management
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapse10Five" class="collapse" data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li>  Our secure online payment system eliminates in-person transactions and cash handling, allowing patrons to pay fines, fees, and subscriptions through a secure gateway. </li>
-                                           <li> Patrons can use various payment methods, including digital wallets, debit cards, and credit cards. </li>
-                                            <li>The system offers real-time updates on account status and automates payment reminders, enhancing transparency and reducing overdue payments.
-                                        </li>                                   </ul>
+                                        <li> Our School CRM's digital library management module streamlines the use of educational resources with features like e-books, cataloging, book distribution, and inventory management. </li> 
+                                        <li>  Students and teachers can easily search for and borrow books and e-learning materials. Librarians can maintain up-to-date inventory records, track borrowing patterns, and generate resource usage reports, supporting efficient library management.
+                                        </li>                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1049,18 +1319,18 @@
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A); ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10One">
-                                        <i class="fas fa-users text-color-light"></i>Automated Notifications
+                                        <i class="fas fa-users text-color-light"></i> Examination Management
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapse10One" class="collapse " data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li> Libraries can help patrons avoid late fees and manage borrowed items with automatic notifications for upcoming returns, overdue books, and due dates.</li> 
-                                            <li> Regular reminders & updates are sent via WhatsApp, SMS, or email for user convenience.</li> 
-                                            <li> Patrons also receive updates on library events, closures, new arrivals in preferred genres, and availability of reserved items, ensuring timely and personalized communication.
-                                            
-                                        </li>
+                                        <li>Our School CRM's exam module allows examiners to easily create, schedule, and administer various assessments like quizzes, tests, and exams.</li>
+                                        <li>Streamline exam planning, student seating arrangements, classroom allocation management, and invigilator allocation for smooth exam conduct. </li>
+                                        <li>The module also enables efficient review and analysis of exam results, providing teachers, students, and parents with valuable insights into student performance and progress.
+                                        </li> 
+        
                                     </ul>
                                 </div>
                             </div>
@@ -1069,23 +1339,91 @@
                             <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
                                 <h4 class="card-title m-0">
                                     <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Seven">
-                                        <i class="fa-solid fa-database text-color-light"></i>Reporting & Analytics
+                                        <i class="fa-solid fa-database text-color-light"></i> Staff Management Module
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapse10Seven" class="collapse" data-bs-parent="#accordion10">
                                 <div class="card-body pe-0 ps-4 py-2">
                                     <ul class="" style="padding: 0px;">
-                                        <li> Our library management system provides detailed insights into key areas such as user behavior, acquisition trends, and circulation statistics.</li> 
-                                            <li>Library owners can track popular and less-used resources through reports on checkouts, returns, and reservations, aiding data-driven acquisition decisions. </li>
-                                            <li> Advanced analytics optimize staffing and resource allocation by analyzing usage trends, peak hours, and frequent users, ensuring efficient library operations.
-                                        </li>                                   
+                                        <li> Our School CRM allows administrators to manage staff profiles and set user access controls based on roles and designations.</li>                                   
+                                        <li>It enables monitoring of staff attendance, including check-in and check-out times, by location.</li>                                   
+                                        <li>The staff management module also maintains teacher records while fostering transparency and engagement through communication of staff announcements and achievements.</li>                                   
                                      </ul>
                                 </div>
                             </div>
                         </div>
-                        
-                        
+                        <div class="mt-2 card-default"   style="  border-color: transparent;">
+                            <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Eight">
+                                        <i class="fa-solid fa-server text-color-light"></i> Human Resource Management
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10Eight" class="collapse" data-bs-parent="#accordion10">
+                                <div class="card-body pe-0 ps-4 py-2">
+                                    <ul class="" style="padding: 0px;">
+                                        <li>The staff management module simplifies recruitment, engagement, and management of institutional staff information.</li>
+                                        <li>Administrators can manage staff profiles, store records, contracts, and performance reviews.</li>
+                                        <li> The module also allows for the planning, scheduling, and management of training programs and workshops to enhance teaching methods.</li>
+                                        <li>Integrated with a payroll module, it ensures accurate automated payroll processing and attendance tracking of teachers for efficient payroll management.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 card-default"   style="  border-color: transparent;">
+                            <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Nine">
+                                        <i class="fa-solid fa-cube text-color-light"></i> Integrated Parent, Teacher & Student Mobile App
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10Nine" class="collapse" data-bs-parent="#accordion10">
+                                <div class="card-body pe-0 ps-4 py-2">
+                                    <ul class="" style="padding: 0px;">
+                                        <li>The integrated parent-teacher-student module allows parents to track academic progress, attendance, and school announcements, promoting active parental involvement.</li>
+                                        <li> Staff can manage location-specific attendance, view assigned classes, and more. Students can access assignments, lesson plans, timetables, and learning resources, empowering them to take ownership of their education.</li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 card-default"  style="  border-color: transparent;">
+                            <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Ten">
+                                        <i class="fa-solid fa-object-ungroup text-color-light"></i>Integrated Media App Module
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10Ten" class="collapse" data-bs-parent="#accordion10">
+                                <div class="card-body pe-0 ps-4 py-2">
+                                    <ul class="" style="padding: 0px;">
+                                        <li> The Image Slider and Image Gallery features allow administrators to easily display highlights from school events, sports competitions, cultural performances, and other extracurricular activities. </li>
+                                        <li> Administrators can also upload and share YouTube video links featuring memorable moments or promotional content related to upcoming institutional functions.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 card-default"   style="  border-color: transparent;">
+                            <div class="card-header" style="border-radius: 10px !important;background-image:  linear-gradient(to right,#0052CD, #00317A);  ">
+                                <h4 class="card-title m-0">
+                                    <a class="accordion-toggle text-color-light font-weight-bold" data-bs-toggle="collapse" data-bs-parent="#accordion10" href="#collapse10Eleven">
+                                        <i class="fa-solid fa-clone text-color-light"></i> Communication Module
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10Eleven" class="collapse" data-bs-parent="#accordion10">
+                                <div class="card-body pe-0 ps-4 py-2">
+                                    <ul class="" style="padding: 0px;">
+                                        <li> Communication module allows administrators to send announcements, newsletters, and important updates through the notice board to specific classes, batches, or individual students. </li>    
+                                        <li> Teachers can communicate lesson plans, assignments, and classroom updates to students and parents. </li>    
+                                        <li>  Additionally, the module supports two-way communication, including WhatsApp integration and chat features, enabling real-time interaction between teachers and parents to address academic concerns and foster the professional development of students.</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>   
                 </div>
 
@@ -1095,17 +1433,13 @@
             <section class="real-estate-section-2 px-lg-2 mx-lg-2 pb-lg-3 mt-lg-5 pt-5">
                 <div class="container text-center mb-5 px-2">
                     <h2 class="appear-animation" data-appear-animation="fadeInRightShorter"
-                        data-appear-animation-delay="200">Our Stage Wise Library Management System Process
+                        data-appear-animation-delay="200">Our Stage Wise School CRM Development Journey
                         </h2>
                     <h4 class="appear-animation mx-1 d-none d-md-block" data-appear-animation="fadeInRightShorter"
-                        data-appear-animation-delay="400">Witness our step by step process in making a library management system.
-
-
+                        data-appear-animation-delay="400">Witness our step by step process in making a School CRM platform.
                         </h4>
-                    <h4 class="appear-animation mx-1 d-block d-md-none" style="font-size: 18px;" data-appear-animation="fadeInRightShorter"
-                        data-appear-animation-delay="400">Witness our step by step process in making a library management system.
-
-
+                    <h4 class="appear-animation mx-1 d-block d-md-none" data-appear-animation="fadeInRightShorter" style="font-size: 18px;"
+                        data-appear-animation-delay="400">Witness our step by step process in making a School CRM platform.
                         </h4>
                         <img class="d-md-block d-none" src="img\real-estate\NewestIcon\Development Process.png" alt="Development Process" width="700px" height="150px" style="margin-top: 15px;margin: auto;">
                         <!-- <img class="d-md-none" src="img\real-estate\development-process-mobile.png" alt="" width="40%" height="auto"> -->
@@ -1116,16 +1450,14 @@
 
             <div style="display: flex; justify-content: center; align-items: center; width: 100vw;margin-bottom: 25px;">
                 <section class="real-estate-section-3 mx-2"
-                         style="background-image: url('img/Allindustry/libraray/CTA.jpg'); border-radius: 30px !important; width: 1000px; display: flex;
+                         style="background-image: url('img/Allindustry/Education\ \(Industry\ Page\)/CTA.jpg'); border-radius: 30px !important; width: 1000px; display: flex;
                          justify-content: center; align-items: center;" aria-label="Image of a door and its keys hanging on the door knob.">
                     <div class="" style="margin: auto;">
                         <div class="row">
                             <div class="" style="padding: 10px;">
                                 <div class="row" style="padding: 10px;line-height: normal; max-width: 800px;">
                                     <h2  class="appear-animation " data-appear-animation="fadeInRightShorter"
-                                        data-appear-animation-delay="200"> The Global Market Size For Library Management Systems Is Expected To Touch US$ 462.4 Mn By 2029, Showing The Overall CAGR Growth Of 6.4%!
-
-
+                                        data-appear-animation-delay="200">You know a whooping 89% Edtech Institutions are ready to pay & gather the access for a CRM 
 
 
                                     </h2>
@@ -1147,7 +1479,7 @@
                                     style="color: white;background: linear-gradient(90deg, #0052CD 0%, #000000 100%);border-radius: 25px !important;border: none;">
                                     Get Free Consultation
                                 </button>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1159,12 +1491,10 @@
                 <section class="section-scroll d-md-block d-none"> 
                 <div class="scroll-container" style="padding-top: 40px;width: 1000px;margin: auto;">
                   <div class="leftDiv">
-                    <h2 style="font-size: 40px;letter-spacing: 0.5px;margin-bottom: 35px;">Admin Panel for Library Management System</h2>
+                    <h2 style="font-size: 40px;letter-spacing: 0.5px;margin-bottom: 35px;"> Admin Panel Of Our School CRM Software
+                    </h2>
                     <!-- <p class="text-left text-3 text-white">01 -> 04</p> -->
-                    <p class="text-left text-white" style="margin-bottom: 45px;font-size: 1.35rem;">Streamline operations, manage patrons, books, memberships effortlessly with enhanced security and boost efficiency with our comprehensive library management admin tools.
-
-
-
+                    <p class="text-left text-white" style="margin-bottom: 45px;font-size: 1.35rem;"> Our school management system's admin panel streamlines operations, boosts efficiency, and enhances value education for exceptional educational experiences.
                         </p>
                     <a class="px-3 py-3" href="contact-us" style="background: #0052CD;border-radius: 25px !important;color: white;margin-bottom: 10px;margin-top: 30px !important;">Get Free Consultation</a>  
                 </div>
@@ -1172,31 +1502,31 @@
                     <!-- <div class="rightDivChild"> -->
                     <div class="card" style="border-radius: 25px !important;">
                         <!-- <div style="display: flex;flex-direction: column;align-items: center;padding-top: 10px;padding-bottom: 10px;text-align: left !important;"> -->
-                        <img src="img/Allindustry/libraray/Admin Panel - Role Based Access.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
+                        <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Role Based Access.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
                         <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;text-align: left !important;">Role Based Access </h2>
-                        <p style="color: #000;font-size: 0.95rem;">Our Role-Based Access feature empowers administrators to create, manage, and delete user accounts while assigning specific roles and permissions to staff, students, and other users.</p>
+                        <p style="color: #000;font-size: 0.95rem;">Our role-based access in the school CRM helps admins manage staff permissions, track activities, and ensure data security by restricting module access to specific departments, and thereby improving operational efficiency. </p>
+                    <!-- </div> -->
+                    </div>
+                    <div class="card" style="border-radius: 25px !important;">
+                        <!-- <div style="display: flex;flex-direction: column;align-items: center;padding-top: 10px;padding-bottom: 10px;text-align: left !important;"> -->
+                        <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Database Management.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
+                        <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;text-align: left !important;">Database Management </h2>
+                        <p style="color: #000;font-size: 0.95rem;">In database management admin can manage student inquiries, teacher records, attendance, and class assignments. The database management tools enable custom report creation, and data-driven insights to improve decision-making and educational outcomes.</p>
                     <!-- </div> -->
                     </div>
                       <div class="card" style="border-radius: 25px !important;">
                         <!-- <div style="display: flex;flex-direction: column;align-items: center;padding-top: 10px;padding-bottom: 10px;text-align: left !important;"> -->
-                        <img src="img/Allindustry/libraray/Admin Panel - System Setting.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
-                        <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">System Settings</h2>
-                        <p style="color: #000;font-size: 0.95rem;">System Settings allows administrators to configure key parameters, including adding, editing, and deleting catalog entries, e-books, and personalized notification alerts for patrons. Admins can also set library hours, adjust localization settings, and manage backup and restore operations.
-                        </p>
+                        <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Branch Management.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
+                        <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">Branch Management</h2>
+                        <p style="color: #000;font-size: 0.95rem;">Admins efficiently manage multiple school branches, with access to student and teacher data, specific to each location. The performance analysis and reporting feature enable admins to evaluate the performance of each school branch, helping them to make informed decision-making.</p>
                       <!-- </div> -->
                       </div>
                       <div class="card" style="border-radius: 25px !important;">
-                        <img src="img/Allindustry/libraray/Admin Panel - Database Management.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
-                        <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">Database Management</h2>
-                        <p style="color: #000;font-size: 0.95rem;">The Library Database Management System enables admins to manage patron databases, including membership plans, fines, and book records. It offers advanced search and filtering tools to quickly locate records, while batch processing simplifies tasks like importing/exporting book lists and user information, enhancing data handling efficiency.</p>
+                        <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Fee Management.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
+                        <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">Fee Management</h2>
+                        <p style="color: #000;font-size: 0.95rem;">With fee management admin can manage student finances, create dynamic fee heads, process payments, track pending fees, and generate detailed reports. The automated invoice generation feature provides fee statements, while payment tracking monitors partial payments, late fees, and many more..</p>
                       </div>
-                      <div class="card" style="border-radius: 25px !important;">
-                        <img src="img/Allindustry/libraray/Admin Panel - User Support.png" alt="" width="50px" height="50px" style="margin-top: 30px;">
-                        <h2 style="color: #000;margin-bottom: 10px;font-size: 1.35rem;font-weight: bold;">User Support</h2>
-                        <p style="color: #000;font-size: 0.95rem;">The User Support feature allows admins to manage support requests and inquiries related to books, periodicals, and communication channels. It also enables admins to update FAQs, guides, and tutorials, empowering users to find solutions independently.
-
-                        </p>
-                      </div>
+                     
                     <!-- </div> -->
                   </div>
                 </div>
@@ -1205,13 +1535,11 @@
               <section class="section-scroll d-block d-md-none" style="height: 2100px;margin-top: 25px;">
                 <div style="padding: 5px; width: 100%; margin: auto;">
                   <div style="text-align: center; margin-bottom: 30px;">
-                    <h2 style="font-size: 24px; letter-spacing: 0.5px; margin-bottom: 20px; color: white; line-height: 1.2;"> Admin Panel for Library Management System
+                    <h2 style="font-size: 24px; letter-spacing: 0.5px; margin-bottom: 20px; color: white; line-height: 1.2;">Simplify Your School Management - Our School CRM Dynamic Admin Panel
 
                     </h2>
                     <p style="color: white; font-size: 1.1rem; margin-bottom: 20px;">
-                        Streamline operations, manage patrons, books, memberships effortlessly with enhanced security and boost efficiency with our comprehensive library management admin tools.
-
-
+                        Our school management system's admin panel streamlines operations, boosts efficiency, and enhances value education for exceptional educational experiences.
 
 
                     </p>
@@ -1219,32 +1547,32 @@
                   </div>
                   <div>
                     <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                      <img src="img/Allindustry/libraray/Admin Panel - Role Based Access.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Role Based Access.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
                       <h2 style="color: white; font-size: 1.2rem; text-align: center;">Role Based Access</h2>
                       <p style="color: #fff; font-size: 1rem; text-align: center;">
-                        Our Role-Based Access feature empowers administrators to create, manage, and delete user accounts while assigning specific roles and permissions to staff, students, and other users. 
+                        Our role-based access in the school CRM helps admins manage staff permissions, track activities, and ensure data security by restricting module access to specific departments, and thereby improving operational efficiency. 
                       </p>
                     </div>
                     <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                      <img src="img/Allindustry/libraray/Admin Panel - System Setting.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
-                      <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">System Settings</h2>
-                      <p style="color: #fff; font-size: 1rem; text-align: center;">
-                        System Settings allows administrators to configure key parameters, including adding, editing, and deleting catalog entries, e-books, and personalized notification alerts for patrons. Admins can also set library hours, adjust localization settings, and manage backup and restore operations.
-                      </p>
-                    </div>
-                    <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                      <img src="img/Allindustry/libraray/Admin Panel - Database Management.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Database Management.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
                       <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">Database Management</h2>
                       <p style="color: #fff; font-size: 1rem; text-align: center;">
-                        The Library Database Management System enables admins to manage patron databases, including membership plans, fines, and book records. It offers advanced search and filtering tools to quickly locate records, while batch processing simplifies tasks like importing/exporting book lists and user information, enhancing data handling efficiency.
+                        In database management admin can manage student inquiries, teacher records, attendance, and class assignments. The database management tools enable custom report creation, and data-driven insights to improve decision-making and educational outcomes.
+                      </p>
+                    </div>
+                    <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                      <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Branch Management.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">Branch Management</h2>
+                      <p style="color: #fff; font-size: 1rem; text-align: center;">
+                        Admins efficiently manage multiple school branches, with access to student and teacher data, specific to each location. The performance analysis and reporting feature enable admins to evaluate the performance of each school branch, helping them to make informed decision-making.
 
                       </p>
                     </div>
                     <div style="border: 1px solid #ddd; border-radius: 15px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                      <img src="img/Allindustry/libraray/Admin Panel - User Support.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
-                      <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">User Support</h2>
+                      <img src="img/Allindustry/Education (Industry Page)/Admin Panel - Fee Management.png" alt="" width="50" height="50" style="display: block; margin: 0 auto 10px;">
+                      <h2 style="color: #fff; font-size: 1.2rem; text-align: center;">Fee Management</h2>
                       <p style="color: #fff; font-size: 1rem; text-align: center;">
-                        The User Support feature allows admins to manage support requests and inquiries related to books, periodicals, and communication channels. It also enables admins to update FAQs, guides, and tutorials, empowering users to find solutions independently.
+                        With fee management admin can manage student finances, create dynamic fee heads, process payments, track pending fees, and generate detailed reports. The automated invoice generation feature provides fee statements, while payment tracking monitors partial payments, late fees, and many more..
 
 
                       </p>
@@ -1258,14 +1586,16 @@
                 <div class="overflow-hidden mb-1 mt-4">
                     <h2 class="font-weight-bold text-color-dark positive-ls-3 mb-0 d-none d-md-block" style="font-size: 40px;letter-spacing: 0.5px !important;line-height: normal;">Our Technology Stack</h2>
                     <h2 class="font-weight-bold text-color-dark positive-ls-3 mb-0 d-block d-md-none" style="font-size: 24px;letter-spacing: 0.5px !important;line-height: normal;">Our Technology Stack</h2>
-                    <p class="mt-3 d-none d-md-block" style="font-size: 20px;line-height: normal;color: #000;">We leverage cutting-edge technologies to craft exceptional digital experiences.</p>
-                    <p class="mt-3 d-block d-md-none" style="font-size: 18px;line-height: normal;color: #000;">We leverage cutting-edge technologies to craft exceptional digital experiences.</p>
+                    <p class="mt-3 d-none d-md-block" style="font-size: 20px !important;line-height: normal;color: #000;"> We leverage cutting-edge technologies to craft exceptional digital experiences.
+                    </p>
+                    <p class="mt-3  d-block d-md-none" style="font-size: 18px !important;line-height: normal;color: #000;"> We leverage cutting-edge technologies to craft exceptional digital experiences.
+                    </p>
                 </div>
 
                 <div class="filter-section text-center mt-5">
                     <div class="filter-buttons active">
                         <button class="filter-btn active" data-category="frontend" >
-                            <img src="img\home page\HomePagetechstackIcons\Frontend Programming.svg" alt="Frontend Icon" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle; background-color: #0052CD;"> 
+                            <img src="img\home page\HomePagetechstackIcons\Frontend Programming.svg" alt="Frontend Icon" style="width: 20px; height: 20px; margin-right: 8px; vertical-align: middle; background-color: #0052CD"> 
                             Frontend Programming
                         </button>
                         <button class="filter-btn active" data-category="backend">
@@ -1493,8 +1823,8 @@
                 <div style="width: 1000px;margin: auto;">
                     <div class="row mt-5" >
                         <h2 class="appear-animation pe-5" data-appear-animation="fadeInRightShorter"
-                            data-appear-animation-delay="100">Lead The Future Of Library Management System With Ascentia Labs</h2>
-                        <h4 class="appear-animation" style="font-size: 20px;" data-appear-animation="fadeInRightShorter"
+                            data-appear-animation-delay="100">Rise to Technical Educational Excellence  With <br> Ascentia Labs</h2>
+                        <h4 class="appear-animation" data-appear-animation="fadeInRightShorter"
                             data-appear-animation-delay="200">Here's Why You Can't Afford to Miss Us Out!</h4>
                         <ul class="real-estate-section-7-list justify-content-start">
                             <li class="text-white appear-animation" data-appear-animation="fadeInRightShorter"
@@ -1547,7 +1877,7 @@
           data-appear-animation="fadeInRightShorter"
           data-appear-animation-delay="200" 
           style="font-size: 24px; margin-bottom: 20px; color: white;">
-          Lead The Future Of Library Management System With Ascentia Labs
+          Rise to Technical Educational Excellence with Ascentia Labs
       </h2>
       
       <!-- Centering the h4 -->
@@ -1620,13 +1950,13 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
                                 style="font-weight: bold;">
-                                How can I determine if your Library Management System is the optimal choice for my library?  
+                                Why there is a need to have a School CRM system? 
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body" style="text-align: left;">
-                                Our Library Management System, built with modern technologies, offers innovative solutions for seamless library operations. Flexible and scalable, it evolves with your library's growth and changing needs, providing efficient management, security, and user support for all library resources.
+                                A school CRM is essential for managing student data, classroom activities, finances, and academic processes while fostering seamless communication among stakeholders. It enhances efficiency, centralizes information, strengthens teacher-parent collaboration, supports informed decision-making, ensures data security compliance, and ultimately elevates the quality of education delivered. 
                             </div>
                         </div>
                     </div>
@@ -1637,11 +1967,11 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
                                 style="font-weight: bold;">
-                                How Does a Library Management System Benefit Libraries?
+                                Is a School CRM platform suitable for all types of educational institutions?
                             </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="text-align:left">Our Library Management System boosts operational efficiency by automating tasks, enhances user experience with self-service options, optimizes resource utilization through analytics, and ensures accurate inventory management and tracking.  
+                            <div class="accordion-body" style="text-align:left">A School CRM provides comprehensive solutions for managing student data, finances, communication, and administrative tasks across educational institutions to ensure quality education. Its effectiveness depends on factors such as scalability, user-friendliness, integration capabilities, security, and adherence to data protection regulations.
                             </div>
                         </div>
                     </div>
@@ -1652,11 +1982,11 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
                                 style="font-weight: bold;">
-                                What sets Ascentia Labs apart as the premier leader in Library Management System development?
+                                Are School CRM platforms secure and compliant with data protection regulations?
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body" style="text-align: left;">At Ascentia Labs, we stand out as a leading Library Management System development company, combining innovation with client-centricity. We go beyond software creation by deeply understanding your business, addressing pain points, and integrating emerging trends. Our commitment ensures the delivery of a highly customized, revenue-generating platform tailored to your unique needs.
+                            <div class="accordion-body" style="text-align: left;">Yes, School CRM platforms prioritize security and privacy compliance, using measures such as user authentication, encryption, role-based access control, and regular updates. To ensure student privacy and regulatory compliance, educational institutions always keep a check on their security features and certifications of compliance. 
 
                             </div>
                         </div>
@@ -1668,12 +1998,13 @@
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
                                 style="font-weight: bold;">
-                                How Secure is Library Patron Data in a Library Management System?
+                                Is investing in a School CRM platform a good option ? 
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body" style="text-align: left;">
-                                Our Library Management System prioritizes security, ensuring that patron data is protected from unauthorized access, loss, or theft. We incorporate advanced encryption techniques to safeguard user data and implement user access controls, allowing you to define which modules are accessible to specific users. 
+                                Investing in a School CRM offers benefits such as simplified data management, better communication, classroom management, curriculum development, which helps in better decision-making. It helps academic institutions to stay competitive by adapting to educational technology and responding to changing needs in the edtech sector.
+
                             </div>
                         </div>
                     </div>
@@ -1682,14 +2013,12 @@
             </section>
 
             <section class="real-estate-section-9 mt-5 mb-5"
-                style="background-image: url(img/Allindustry/libraray/CTA.jpg);width: 1000px;margin: auto;height: 350px;border-radius: 30px;" aria-label="Image of a man standing between the huge real estate buildings">
+                style="background-image: url('img/Allindustry/Education\ \(Industry\ Page\)/CTA Footer.jpg');width: 1000px;margin: auto;height: 350px;border-radius: 30px;" aria-label="Image of a man standing between the huge real estate buildings">
                 <div class="container container-xl-custom py-5">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-md-10 text-center">
                             <h2 class="appear-animation" data-appear-animation="fadeInRightShorter"
-                                data-appear-animation-delay="200">Collaborate With Us To Unlock the Future of Library Management System That Will Revolutionize Your Library Operations!
-
-                            </h2>
+                                data-appear-animation-delay="200">Empower Your Technical Education Vision With Us!</h2>
                         </div>
                        
                         <div class="col-md-8 text-center appear-animation mt-4" data-appear-animation="fadeInRightShorter"
@@ -1698,7 +2027,7 @@
                                 class="btn btn-dark font-weight-semibold border-width-4 custom-link-effect-1 text-1 text-xl-3 d-inline-flex align-items-center  appear-animation py-3 px-4"
                                 data-appear-animation="maskRight"
                                 style="background-color: white; border-color:white; color:black !important; font-size:20px;border-radius: 25px !important;border: none !important;"
-                                href="contact-us">Get Free Consultation<i
+                                href="contact-us">Plan Your Next Move<i
                                     class="custom-arrow-icon ms-2"></i></a>
                         </div>
                     </div>
@@ -1865,6 +2194,8 @@
         // Trigger the first button's click event on page load (optional)
         filterButtons[0].click();
     </script>
+
+
 
 <script>
     const modal = document.getElementById("myModal");
