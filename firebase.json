@@ -20,6 +20,7 @@
       { "source": "/real-estate-app-development", "destination": "/real-estate-app-development.html" },
       { "source": "/interior-design-app-development", "destination": "/interior-design-app-development.html" },
       { "source": "/blog", "destination": "/blog.html" },
+      { "source": "/sitemap", "destination": "/sitemap_index.html" },
       { "source": "/travel-app-development-in-tourism", "destination": "/travel-app-development-in-tourism.html" },
       { "source": "/latest-tourism-insights2025", "destination": "/latest-tourism-insights2025.html" },
       { "source": "/how-technology-is-revolutionizing-real-estate-app-development", "destination": "/how-technology-is-revolutionizing-real-estate-app-development.html" },

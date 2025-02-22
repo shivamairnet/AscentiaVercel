@@ -8,115 +8,92 @@
 
 <url>
   <loc>https://ascentialabs.com/</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>1.00</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/about-us</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/contact-us</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/complaint-management-system</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/education-app-development</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/enterprise-resource-planning</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/healthcare-app-development</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/interior-design-app-development</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/library-management-system</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/logistics-software-development</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/real-estate-app-development</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/travel-app-development</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>
-
 <url>
   <loc>https://ascentialabs.com/blog</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
-  <changefreq>monthly</changefreq>
 </url>
-
-<url>
-  <loc>https://ascentialabs.com/how-technology-is-revolutionizing-real-estate-app-development</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.64</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
-<url>
-  <loc>https://ascentialabs.com/travel-app-development-in-tourism</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.64</priority>
-  <changefreq>monthly</changefreq>
-</url>
-
 <url>
   <loc>https://ascentialabs.com/latest-tourism-insights2025</loc>
-  <lastmod>2025-02-21T12:00:02+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
   <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
 </url>
-
-
+<url>
+  <loc>https://ascentialabs.com/travel-app-development-in-tourism</loc>
+  <lastmod>2025-02-05T13:07:11+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
 </urlset>
