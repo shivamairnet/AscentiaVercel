@@ -24,7 +24,9 @@
       { "source": "/travel-app-development-in-tourism", "destination": "/travel-app-development-in-tourism.html" },
       { "source": "/latest-tourism-insights2025", "destination": "/latest-tourism-insights2025.html" },
       { "source": "/how-technology-is-revolutionizing-real-estate-app-development", "destination": "/how-technology-is-revolutionizing-real-estate-app-development.html" },
-
+      { "source": "/construction-management", "destination": "/construction-management.html" },
+      { "source": "/manufacturing", "destination": "/manufacturing.html" },
+      { "source": "/kindergarten", "destination": "/kindergarten-school-management.html" },
       { "source": "/", "destination": "/index.html" }
     ]
   }
