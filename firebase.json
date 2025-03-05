@@ -26,7 +26,16 @@
       { "source": "/how-technology-is-revolutionizing-real-estate-app-development", "destination": "/how-technology-is-revolutionizing-real-estate-app-development.html" },
       { "source": "/construction-management", "destination": "/construction-management.html" },
       { "source": "/manufacturing", "destination": "/manufacturing.html" },
-      { "source": "/kindergarten", "destination": "/kindergarten-school-management.html" },
+      { "source": "/kindergarten-school-management", "destination": "/kindergarten-school-management.html" },
+      { "source": "/ecommerce-software-development-services", "destination": "/ecommerce-software-development-services.html" },
+      { "source": "/custom-software-development-services", "destination": "/custom-software-development-services.html" },
+      { "source": "/custom-mobile-application-development-services", "destination": "/custom-mobile-application-development-services.html" },
+      { "source": "/saas-application-development-services", "destination": "/saas-application-development-services.html" },
+      { "source": "/custom-website-development-services", "destination": "/custom-website-development-services.html" }, 
+      { "source": "/custom-shopify-store-development-services", "destination": "/custom-shopify-store-development-services.html" },
+      { "source": "/whatsApp-business-api-integration-services", "destination": "/whatsApp-business-api-integration-services.html" },
+      { "source": "/top-upcoming-technology-trends-in-real-estate-industry", "destination": "/top-upcoming-technology-trends-in-real-estate-industry.html" },
+      { "source": "/how-mobile-app-development-is-empowering-the-manufacturing-industry", "destination": "/how-mobile-app-development-is-empowering-the-manufacturing-industry.html" },     
       { "source": "/", "destination": "/index.html" }
     ]
   }
