@@ -246,7 +246,7 @@
       }
 
       .responsive-background {
-        background-image: url("img/real-estate/Real Estate (1).jpg");
+        background-image: url("/public/img/case-study/Header.jpg");
         height: 700px;
         background-position: center;
         background-size: contain;
@@ -255,22 +255,150 @@
 
       @media (max-width: 768px) {
         .responsive-background {
-          background-image: url("img/Mobile Service Page Images/Mobile Service Page Header.jpg");
+          background-image: url("/public/img/case-study/Header.jpg");
           height: 375px;
           background-size: cover;
           background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
-        .section-2-subhead {
-          margin-top: 155px;
-          font-size: 24px !important;
-          line-height: 1.95rem;
+      }
+
+      .section-2-subhead {
+        margin-top: 155px;
+        font-size: 24px !important;
+        line-height: 1.95rem;
+      }
+
+      .optimize-class {
+        font-size: 20px !important;
+      }
+
+      .streamline {
+        line-height: 1.35rem !important;
+        margin-top: 8px;
+      }
+
+      @media (max-width: 1024px) {
+        .section-22 .d-flex {
+          width: 100% !important;
+          flex-direction: column;
+          align-items: center;
         }
-        .optimize-class {
+
+        .section-22 .column1,
+        .section-22 .column2 {
+          width: 100% !important;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .section-22 .column2 {
+          padding: 30px 20px;
+        }
+
+        .section-22 .custom-button {
+          width: 100% !important;
+          max-width: 250px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .section-22 .column1,
+        .section-22 .column2 {
+          padding: 15px;
+        }
+
+        .section-22 h3 {
+          font-size: 22px !important;
+        }
+
+        .section-22 p {
+          font-size: 15px !important;
+        }
+
+        .section-22 .custom-button {
+          font-size: 14px;
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .section-22 h3 {
           font-size: 20px !important;
         }
-        .streamline {
-          line-height: 1.35rem !important;
-          margin-top: 8px;
+
+        .section-22 p {
+          font-size: 14px !important;
+        }
+
+        .section-22 .custom-button {
+          font-size: 13px;
+          padding: 8px;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .testimonial-section .d-flex {
+          width: 100% !important;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .testimonial-section .column1,
+        .testimonial-section .column2 {
+          width: 100% !important;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .testimonial-section .column2 {
+          padding: 30px 20px;
+        }
+
+        .testimonial-section .custom-button {
+          width: 100% !important;
+          max-width: 250px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .testimonial-section div {
+          height: 650px;
+        }
+
+        .testimonial-section .column1,
+        .testimonial-section .column2 {
+          padding: 15px;
+        }
+
+        .testimonial-section h3 {
+          font-size: 22px !important;
+        }
+
+        .testimonial-section p {
+          font-size: 15px !important;
+        }
+
+        .testimonial-section .custom-button {
+          font-size: 14px;
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .testimonial-section h3 {
+          font-size: 20px !important;
+        }
+
+        .testimonial-section p {
+          font-size: 14px !important;
+        }
+
+        .testimonial-section .custom-button {
+          font-size: 13px;
+          padding: 8px;
         }
       }
     </style>
@@ -1632,31 +1760,6 @@
                               </div>
                             </ul>
                           </li>
-                          <!-- till here -->
-
-                          <!-- <li class="dropdown">
-                                                <a class="dropdown-item dropdown-toggle" style="cursor: pointer;">
-                                                    Portfolio
-                                                </a>
-                                                <ul class="dropdown-menu" style="font-size: 18px;">
-                                                    <li>
-                                                        <a class="nav-link text-dark" href="">Centra Greens</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="nav-link text-dark" href="">Pumpkins</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="nav-link text-dark" href="">Keva Industries</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="nav-link text-dark" href="">Clay</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="nav-link text-dark" href="">Airnets Travels &
-                                                            Cargo</a>
-                                                    </li>
-                                                </ul>
-                                            </li> -->
                           <li>
                             <a
                               class="nav-link d-md-none d-block"
@@ -1728,7 +1831,12 @@
                   data-appear-animation-delay="200"
                   style="font-size: 27px; text-align: center; color: #fff"
                 >
-                  JusDoIt
+                  <img
+                    src="/public/img/case-study/justdoit.png"
+                    alt=""
+                    height="50px"
+                    width="250px"
+                  />
                 </h2>
               </div>
               <div class="text-center">
@@ -1800,9 +1908,7 @@
 
         <section
           class="real-estate-section-1 d-md-block d-none"
-          style="
-            background-image: url('img/Mobile Service Page Images/Mobile Service Page Header.jpg');
-          "
+          style="background-image: url('/public/img/case-study/Header.jpg')"
           aria-label=" Image of a person and of an elusion of a real estate house on his hand"
         >
           <div class="container-fluid">
@@ -1812,9 +1918,14 @@
                   class="appear-animation mt-lg-5"
                   data-appear-animation="fadeInRightShorter"
                   data-appear-animation-delay="200"
-                  style="color: #fff; line-height: 3.5rem"
+                  style="color: #fff; margin-top: 10px; margin-bottom: 10px"
                 >
-                  JustDoIt <br />
+                  <img
+                    src="/public/img/case-study/justdoit.png"
+                    alt=""
+                    height="90px"
+                    width="250px"
+                  />
                 </h1>
               </div>
               <div class="mt-2">
@@ -1829,27 +1940,12 @@
               </div>
               <div class="text-center mt-2">
                 <div class="overflow-hidden">
-                  <button
-                    type="button"
-                    id="openModalBtn"
-                    class="btn btn-primary custom-button btn-outline text-color-light font-weight-semibold border-width-4 custom-link-effect-1 text-1 text-xl-3 d-inline-flex align-items-center appear-animation py-3 px-4"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                    data-appear-animation="maskRight"
-                    data-appear-animation-delay="600"
-                    style="
-                      color: white;
-                      background: linear-gradient(
-                        90deg,
-                        #0052cd 0%,
-                        #000000 100%
-                      );
-                      border-radius: 25px !important;
-                      border: none;
-                    "
-                  >
-                    Get Free Consultation
-                  </button>
+                  <img
+                    src="/public/img/case-study/sood-company.png"
+                    alt=""
+                    height="80px"
+                    width="350px"
+                  />
                 </div>
 
                 <!-- Modal -->
@@ -1923,23 +2019,27 @@
           </div>
         </section>
 
-        <section class="px-lg-2 mx-lg-2 pb-lg-3 mt-5 pt-lg-5">
+        <section class="section-22" style="margin: 80px">
           <div class="d-flex" style="width: 900px; margin: auto">
             <div
               class="column1"
               style="
-                background: blue;
+                background: linear-gradient(to bottom, #0052cd 0%, #000 100%);
                 width: 50%;
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                border-radius: 10px;
+                border-radius: 30px;
               "
             >
-              <h3 style="color: #fff">About The Project</h3>
-              <p style="color: #fff">
+              <h3
+                style="color: #fff; text-decoration: underline; font-size: 30px"
+              >
+                About The Project
+              </h3>
+              <p style="color: #fff; font-size: 17px">
                 JusDoIt is a task management software developed by Ascentia Labs
                 that helped S.Sood & Company to track multiple projects, assign
                 tasks all in one platform.
@@ -1952,7 +2052,7 @@
                 flex-direction: column;
                 width: 50%;
                 justify-content: center;
-                padding: 20px;
+                padding: 40px;
               "
             >
               <h3
@@ -1960,23 +2060,27 @@
                   color: #000;
                   margin-bottom: 8px;
                   text-transform: none;
-                  font-size: 1.6rem;
+                  font-size: 25px;
+                  text-decoration: underline;
                 "
               >
                 Service
               </h3>
-              <p style="color: #000">Custom Software Development</p>
+              <p style="color: #0053ce; font-size: 17px">
+                Custom Software Development
+              </p>
               <h3
                 style="
                   color: #000;
                   margin-bottom: 8px;
                   text-transform: none;
-                  font-size: 1.6rem;
+                  font-size: 25px;
+                  text-decoration: underline;
                 "
               >
                 End Users
               </h3>
-              <p style="color: #000">
+              <p style="color: #0053ce; font-size: 17px">
                 Businesses & Enterprises, Startups, Project Managers.
               </p>
               <h3
@@ -1984,78 +2088,45 @@
                   color: #000;
                   margin-bottom: 20px;
                   text-transform: none;
-                  font-size: 1.6rem;
+                  font-size: 25px;
+                  text-decoration: underline;
                 "
               >
                 Build Your Idea
               </h3>
-              <button style="width: 150px">Get In Touch</button>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class></div>
-        </section>
-
-        <section class="px-lg-2 mx-lg-2 pb-lg-3 mt-5 pt-lg-5">
-          <div
-            class="d-flex"
-            style="width: 900px; margin: auto; background: blue"
-          >
-            <div
-              class="column1"
-              style="
-                width: 50%;
-                padding: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                border-radius: 10px;
-              "
-            >
-              <p style="color: #fff">
-                “We had a great experience, the team was quick to understand the
-                same and delivered as per the desired outcome. Highly
-                recommend.”
-              </p>
-            </div>
-            <div
-              class="column2"
-              style="
-                display: flex;
-                flex-direction: column;
-                width: 50%;
-                justify-content: center;
-                padding: 20px;
-                align-items: center;
-              "
-            >
-              <img src="" alt="" height="100px" width="100px" />
-              <h3
+              <a
+                class="btn d-none d-md-inline-block btn-primary custom-button btn-outline text-color-light font-weight-semibold border-width-4 py-3 px-4 mt-3"
+                href="contact-us"
                 style="
-                  color: #fff;
-                  margin-bottom: 8px;
-                  text-transform: none;
-                  font-size: 1.6rem;
-                  margin-top: 14px;
+                  width: 150px;
+                  color: white;
+                  background: linear-gradient(90deg, #0052cd 0%, #000000 100%);
+                  border-radius: 40px !important;
+                  border: none;
+                  transition: all 0.3s ease;
                 "
+                onmouseover="this.style.background='linear-gradient(90deg, #000000 0%, #0052CD 100%)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.3)'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.background='linear-gradient(90deg, #0052CD 0%, #000000 100%)'; this.style.boxShadow='none'; this.style.transform='scale(1)';"
               >
-                Mr. Vinayak Sood
-              </h3>
-              <p style="color: #fff">Partner, S.Sood & Company</p>
+                Get In Touch
+              </a>
             </div>
           </div>
         </section>
 
-        <section class="" style="background-color: #000">
+        <section class="" style="background-color: #000; height: 700px">
           <div class="container text-center mb-5 px-2">
             <h2
               class="appear-animation"
               data-appear-animation="fadeInRightShorter"
               data-appear-animation-delay="200"
-              style="color: #fff; padding-top: 25px"
+              style="
+                color: #fff;
+                padding-top: 45px;
+                font-size: 40px;
+                line-height: normal;
+                font-weight: 600;
+              "
             >
               Boosting Workflow And Productivity At <br />
               S. Sood & Company With JusDoIt
@@ -2068,22 +2139,245 @@
               text-align: center;
               justify-content: center;
               align-items: center;
+              gap: 30px;
             "
           >
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" style="gap: 30px">
               <div>
-                <img src="" alt="" height="200px" width="300px" />
+                <img
+                  src="/public/img/case-study/card-4.png"
+                  alt=""
+                  height="200px"
+                  width="300px"
+                />
               </div>
               <div>
-                <img src="" alt="" height="200px" width="300px" />
+                <img
+                  src="/public/img/case-study/card-2.png"
+                  alt=""
+                  height="200px"
+                  width="300px"
+                />
               </div>
             </div>
-            <div class="d-flex flex-column">
+            <div class="d-flex flex-column" style="gap: 30px">
               <div>
-                <img src="" alt="" height="200px" width="300px" />
+                <img
+                  src="/public/img/case-study/card-1.png"
+                  alt=""
+                  height="200px"
+                  width="300px"
+                />
               </div>
               <div>
-                <img src="" alt="" height="200px" width="300px" />
+                <img
+                  src="/public/img/case-study/card-3.png"
+                  alt=""
+                  height="200px"
+                  width="300px"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="testimonial-section">
+          <div
+            class=""
+            style="
+              background: url('/public/img/case-study/testimonial bg.jpg');
+              height: 450px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div class="container d-flex">
+              <div
+                class="column1"
+                style="
+                  width: 50%;
+                  padding: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 10px;
+                "
+              >
+                <h2
+                  class="testimonial-heading"
+                  style="
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: transparent;
+                    -webkit-text-stroke: 1px #fff; /* Black outline */
+                    text-align: center;
+                  "
+                >
+                  Testimonials
+                </h2>
+
+                <p class="stars" style="color: #fff">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </p>
+                <p style="color: #fff; font-size: 25px; line-height: 2.15rem">
+                  “We had a great experience, the team was quick to understand
+                  the same and delivered as per the desired outcome. Highly
+                  recommend.”
+                </p>
+              </div>
+              <div
+                class="column2"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  width: 50%;
+                  justify-content: center;
+                  padding: 20px;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="/public/img/case-study/vinayak sood.png"
+                  alt=""
+                  height="200px"
+                  width="200px"
+                  style="border-radius: 50%"
+                />
+                <h3
+                  style="
+                    color: #fff;
+                    margin-bottom: 8px;
+                    text-transform: none;
+                    font-size: 1.75rem;
+                    margin-top: 14px;
+                  "
+                >
+                  Mr. Vinayak Sood
+                </h3>
+                <p style="color: #fff; font-size: 1.35rem">
+                  Partner, S.Sood & Company
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="blog-section-2 container py-5"
+          style="max-width: 1200px; margin: 30px auto 30px"
+        >
+          <h2
+            class="text-center mt-4 text-dark fw-bold"
+            style="font-size: 40px"
+          >
+            More Case Studies
+          </h2>
+          <p
+            class="text-center mt-4"
+            style="
+              font-size: 20px;
+              line-height: normal;
+              color: #777;
+              font-weight: 600;
+            "
+          >
+            Explore these inspiring case studies, tackling real-world challenges
+            and delivering <br />
+            comprehensive solutions.
+          </p>
+
+          <div class="row gy-4 mt-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 shadow h-100">
+                <a href="travel-app-development-in-tourism">
+                  <img
+                    src="img/blog/Blog 1.jpg"
+                    class="card-img-top"
+                    alt="Blog 1. Travel App Development"
+                    style="height: 150px; object-fit: cover"
+                  />
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <a
+                    href="travel-app-development-in-tourism"
+                    class="text-decoration-none"
+                  >
+                    <h5
+                      class="card-title text-dark fw-bold mb-3"
+                      style="
+                        font-size: 16px;
+                        line-height: 1.4;
+                        letter-spacing: normal;
+                      "
+                    >
+                      How Did Travel App Development Become Crucial In The
+                      Tourism Industry
+                    </h5>
+                  </a>
+                  <p class="small text-muted mb-0">
+                    <a
+                      href="travel-app-development-in-tourism"
+                      class="text-primary text-decoration-underline"
+                      style="
+                        background-color: #e7e9ec;
+                        padding: 12px;
+                        margin: auto;
+                        text-decoration: none !important;
+                      "
+                    >
+                      <span style="font-size: 14px">Read More</span></a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 shadow h-100">
+                <a href="latest-tourism-insights2025">
+                  <img
+                    src="img/blog/Blog 2.jpg"
+                    class="card-img-top"
+                    alt="Blog 2. Insights in Travel Industry"
+                    style="height: 150px; object-fit: cover"
+                  />
+                </a>
+                <div class="card-body d-flex flex-column">
+                  <a
+                    href="latest-tourism-insights2025"
+                    class="text-decoration-none"
+                  >
+                    <h5
+                      class="card-title text-dark fw-bold mb-4"
+                      style="font-size: 16px; line-height: 1.4"
+                    >
+                      Latest Tourism Report [2025] New Insights in the Travel
+                      Industry
+                    </h5>
+                  </a>
+                  <p class="small text-muted mb-0 mt-3">
+                    <a
+                      href="latest-tourism-insights2025"
+                      class="text-primary text-decoration-underline"
+                      style="
+                        background-color: #e7e9ec;
+                        padding: 12px;
+                        margin: auto;
+                        text-decoration: none !important;
+                      "
+                    >
+                      <span style="font-size: 14px">Read More</span></a
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -2126,6 +2420,7 @@
                         text-decoration: underline;
                         margin-top: 0px;
                         margin-bottom: 5px;
+                        font-size: 22px;
                       "
                     >
                       Get In Touch
@@ -2134,7 +2429,7 @@
                       class="appear-animation"
                       data-appear-animation="fadeInRightShorter"
                       data-appear-animation-delay="200"
-                      style="margin-top: 0px; margin-bottom: 5px"
+                      style="margin-top: 10px; margin-bottom: 5px"
                     >
                       Lets work together!
                     </h2>
@@ -2156,7 +2451,7 @@
                     <div
                       class="mt-2"
                       data-appear-animation="fadeInRightShorter"
-                      data-appear-animation-delay="600"
+                      data-appear-animation-delay="300"
                     >
                       <button
                         type="button"
@@ -2168,11 +2463,7 @@
                         data-appear-animation-delay="600"
                         style="
                           color: white;
-                          background: linear-gradient(
-                            90deg,
-                            #0052cd 0%,
-                            #000000 100%
-                          );
+                          background-color: #000000;
                           border-radius: 25px !important;
                           border: none;
                         "
@@ -2189,11 +2480,7 @@
                         data-appear-animation-delay="600"
                         style="
                           color: white;
-                          background: linear-gradient(
-                            90deg,
-                            #0052cd 0%,
-                            #000000 100%
-                          );
+                          background-color: #000000;
                           border-radius: 25px !important;
                           border: none;
                         "
@@ -2206,7 +2493,12 @@
                     class="d-flex justify-content-center align-items-center"
                     style="width: 50%"
                   >
-                    <img src="" alt="" height="250px" width="250px" />
+                    <img
+                      src="/public/img/case-study/cta-image.png"
+                      alt=""
+                      height="250px"
+                      width="250px"
+                    />
                   </div>
                 </div>
               </div>
