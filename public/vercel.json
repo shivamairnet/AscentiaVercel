@@ -30,8 +30,9 @@
       { "source": "/whatsApp-business-api-integration-services", "destination": "/whatsApp-business-api-integration-services.html" },
       { "source": "/top-upcoming-technology-trends-in-real-estate-industry", "destination": "/top-upcoming-technology-trends-in-real-estate-industry.html" },
       { "source": "/how-mobile-app-development-is-empowering-the-manufacturing-industry", "destination": "/how-mobile-app-development-is-empowering-the-manufacturing-industry.html" },     
-      { "source": "/", "destination": "/index.html" }
-    
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/top-upcoming-technology-trends-in-manufacturing-industry", "destination": "/top-upcoming-technology-trends-in-manufacturing-industry.html" }
+       
     ]
   }
   
