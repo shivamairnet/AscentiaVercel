@@ -2,13 +2,6 @@
 <html lang="en">
 
 <head>
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "pt455c4tmg");
-    </script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -27,33 +20,6 @@
       gtag('js', new Date());
     
       gtag('config', 'G-VJX989Q7PY');
-    </script>
-
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Ascentia Labs",
-        "url": "https://ascentialabs.com/",
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "telephone": ["+91-93563 85744", "+61-412-566-906"],
-            "contactType": "customer service",
-            "areaServed": "Worldwide",
-            "availableLanguage": ["English"]
-          }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "SCO. 56-57, opp. Keys Hotel, H Block, Shaheed Bhagat Singh Nagar",
-          "addressLocality": "Ludhiana",
-          "addressRegion": "Punjab",
-          "postalCode": "141013",
-          "addressCountry": "India"
-        }
-      }
-    
     </script>
     
 
@@ -152,230 +118,173 @@
   display: flex;
 }
 
+.leftDiv {
+  width: 20%;
+  padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 420px;
+}
 
+.innerDiv {
+  width: 60%;
+  padding: 5px;
+  height: 430rem;
+}
 
-    .custom-togglingdropdown {
-      display: block;
-    }
+.rightDiv{
+  width: 20%;
+  padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 420px; 
+}
 
-    .custom-togglingdropdown-hidden {
-      display: none;
-    }
+.section-blog-content {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    .leftDiv {
-      width: 20%;
-      padding: 5px;
-      position: -webkit-sticky;
-      position: sticky;
-      top: 100px;
-      align-self: flex-start;
-      height: 420px;
-    }
-
-    .innerDiv {
-      width: 60%;
-      padding: 25px;
-      height: auto;
-    }
-
+@media (max-width:350){
     .rightDiv {
-      width: 20%;
-      padding: 5px;
-      position: -webkit-sticky;
-      position: sticky;
-      top: 100px;
-      align-self: flex-start;
-      height: 420px;
-    }
+    width: 80% !important;
+    margin: 0 auto !important;
+    height: 450px !important;
+    margin-top: 3540px !important;
+    display: block;
+  }
+}
 
-    .section-blog-content {
-      display: flex;
-      height: 100vh;
-      overflow: hidden;
-    }
+@media (max-width: 768px) {
+  .container-blog {
+    flex-direction: column !important;
+  }
 
-    @media (max-width:350px) {
-      .rightDiv {
-        width: 80% !important;
-        margin: 0 auto !important;
-        height: 450px !important;
-        display: block;
-      }
-    }
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; 
+  }
 
-    @media (max-width: 768px) {
-      .container-blog {
-        flex-direction: column !important;
-      }
+  .rightDiv {
+    width: 80% !important;
+    margin: 0 auto !important;
+    height: 450px !important;
+    margin-top: 3700px !important;
+    display: block;
+  }
 
-      .innerDiv,
-      .rightDiv {
-        width: 100% !important;
-        padding: 0;
-      }
+  .leftDiv{
+    display: none !important;
+  }
 
-      .innerDiv-div {
-        margin-right: 0 !important;
-      }
+  h1, h2 {
+    font-size: 1.2rem; 
+  }
 
-      .rightDiv {
-        width: 80% !important;
-        margin: 35px auto !important;
-        height: 450px !important;
-        display: block;
-      }
+  p {
+    font-size: 0.9rem; 
+    line-height: 1.4;
+    text-align: left !important;
+  }
 
-      .rightDiv-div-height {
-        height: 450px !important;
-      }
+  .section-blog {
+    padding: 10px; 
+  }
 
-      .leftDiv {
-        display: none !important;
-      }
+  .section3{
+    margin-top: 50px !important;
+  }
+}
 
-      h1,
-      h2 {
-        font-size: 1.8rem !important;
-        line-height: 28px !important;
-      }
+@media (min-width:769px) and (max-width: 992px) {
+  .container-blog {
+    flex-direction: column !important;
+  }
 
-      h3 {
-        font-size: 1.4rem !important;
-        line-height: 25px !important;
-        margin-top: 10px !important;
-      }
+  .innerDiv,
+  .rightDiv {
+   width: 100% !important;
+  }
 
-      p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        text-align: left !important;
-      }
+  .leftDiv{
+    display: none !important;
+  }
 
-      .section-blog {
-        padding: 10px;
-      }
+  .rightDiv {
+   height:430px !important ;
+   width: 60% !important;
+   margin: 1100px auto 0 auto !important;
+  }
 
-      .section3 {
-        margin-top: 50px !important;
-      }
+  h1, h2 {
+    font-size: 1.2rem; 
+  }
 
-      .blog-section-2 {
-        margin: 0 !important;
-      }
-    }
+  p {
+    font-size: 0.9rem; 
+    line-height: 1.4; 
+    text-align: left !important;
+  }
 
-    @media (min-width:769px) and (max-width: 992px) {
-      .container-blog {
-        flex-direction: column !important;
-      }
+  .section-blog {
+    padding: 10px; 
+  }
 
-      .innerDiv {
-        width: 100% !important;
-      }
+  .section3{
+    margin-top: 50px !important;
+  }
+}
 
-      .leftDiv {
-        display: none !important;
-      }
-
-      .rightDiv {
-        height: 430px !important;
-        width: 35% !important;
-        margin: auto !important;
-      }
-
-      h1,
-      h2 {
-        font-size: 1.2rem;
-      }
-
-      p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        text-align: left !important;
-      }
-
-      .section-blog {
-        padding: 10px;
-      }
-
-      .section3 {
-        margin-top: 50px !important;
-      }
-
-      .blog-section-2 {
-        margin: 0 !important;
-      }
-    }
-
-    @media (min-width:1025px) {
-      .container1 {
+@media (min-width:1025px){
+    .container1{
         max-width: 1000px;
-      }
     }
+}
 
-    @media (min-width:993px) and (max-width: 1100px) {
-      .container-blog {
-        flex-direction: column !important;
-      }
+@media (min-width:993px) and (max-width: 1100px) {
+  .container-blog {
+    flex-direction: column !important; 
+  }
 
-      .innerDiv,
-      .rightDiv {
-        width: 100% !important;
-      }
+  .innerDiv,
+  .rightDiv {
+    width: 100% !important; 
+  }
 
-      .leftDiv {
-        display: none !important;
-      }
+  .leftDiv{
+    display: none !important;
+  }
+  
+  .rightDiv {
+   height:430px !important ;
+   width: 60% !important;
+   margin: -300px auto 0 auto !important;
+  }
 
-      .rightDiv {
-        height: 430px !important;
-        width: 60% !important;
-        margin: auto !important;
-      }
+  h1, h2 {
+    font-size: 1.2rem;
+  }
 
-      h1,
-      h2 {
-        font-size: 1.2rem;
-      }
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: left !important;
+  }
 
-      p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        text-align: left !important;
-      }
+  .section-blog {
+    padding: 10px;
+  }
 
-      .section-blog {
-        padding: 10px;
-      }
+  .section3{
+    margin-top: 50px !important;
+  }
+}
 
-      .section3 {
-        margin-top: 50px !important;
-      }
-    }
-
-    .custom-togglingdropdown {
-      display: block;
-    }
-
-    .custom-togglingdropdown-hidden {
-      display: none;
-    }
-
-    h2,
-    h3,
-    p {
-      scroll-margin-top: 125px;
-    }
-
-    @media(max-width:768px) {
-      .footer-div {
-        margin: auto !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-    }
 .custom-togglingdropdown {
             display: block;
         }
@@ -385,21 +294,7 @@
             display: none;
         }
      
-        
-    h2,h3,
-    p {
-      scroll-margin-top: 125px;
-    }
 
-    .btn-color{
-      color: white;
-      background-color: #0052CD;
-    }
-
-    .btn-color:hover{
-      color: #000;
-      background-color: white;
-    }
 
     </style>
 
@@ -498,411 +393,303 @@
                                                 </li>
 
                                                 <li class="dropdown ">
-                                                    <a class="dropdown-item dropdown-toggle industriesToggle" style="cursor: pointer;">
-                                                        Services
-                                                    </a>
-                                                    <ul class="dropdown-menu d-none d-lg-flex" style="width: 1150px; border-radius: 15px !important; height: 246px; display: flex; justify-content: space-between; padding: 0px !important; position: absolute; right: -446px;">
-                                                        
-                                                        <!-- Left Section -->
-                                                        <div class="row py-2 ps-3" style="flex: 2; flex-wrap: wrap; display: flex; align-items: center; justify-content: center;">
-                                                            
-                                                            <div class="col-md-6">
-                                                                <a class="nav-link text-dark fw-bold" href="custom-software-development-services">
-                                                                    <img src="img\Header\Services Header Icons\Services Header Icons\Custom Software Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;"> Custom Software Development
+                                                <a class="dropdown-item dropdown-toggle industriesToggle" style="cursor: pointer;">
+                                                    Services
+                                                </a>
+                                                <ul class="dropdown-menu d-none d-lg-flex" style="width: 800px; border-radius: 15px !important; height: 355px; display: flex; justify-content: space-between;padding: 0px !important; position: absolute; right: -300px;">
+                                                    <!-- Left Section -->
+                                                    <div class="row py-2 ps-3" style="flex: 2;flex-direction: column;align-items: center;">
+                                                        <div >
+                                                            <div class="" style="font-size: 17px;">
+                                                                <a class="nav-link text-dark" style="font-weight: bold;">
+                                                                    <img src="img\Header\Services Header Icons\Services Header Icons\Custom Software Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;">Customer Software Development
+                                                                    <span style="display:block; font-size: 0.9em; color: #888; margin-left: 34px;">
+                                                                        Create custom software solutions
+                                                                    </span>
                                                                 </a>
-                                                                <a class="nav-link text-dark fw-bold" href="ecommerce-software-development-services">
+                                                                <a class="nav-link text-dark" style="font-weight: bold;">
                                                                     <img src="img\Header\Services Header Icons\Services Header Icons\E-Commerce.png" alt="" height="25px" width="25px" style="margin-right: 5px;"> E-Commerce
+                                                                    <span style="display:block; font-size: 0.9em; color: #888; margin-left: 34px;">
+                                                                        Craft tailored solutions for online businesses
+                                                                    </span>
                                                                 </a>
-                                                                <a class="nav-link text-dark fw-bold" href="custom-mobile-application-development-services">
-                                                                    <img src="img\Header\Services Header Icons\Services Header Icons\Mobile Application Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;"> Mobile App Development       
+                                                                <a class="nav-link text-dark" style="font-weight: bold;">
+                                                                    <img src="img\Header\Services Header Icons\Services Header Icons\Mobile Application Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;"> Mobile App Development
+                                                                    <span style="display:block; font-size: 0.9em; color: #888; margin-left: 34px;">
+                                                                        Develop seamless apps for iOS and Android
+                                                                    </span>
                                                                 </a>
-                                                                <a class="nav-link text-dark fw-bold" href="saas-application-development-services">
+                                                                <a class="nav-link text-dark" style="font-weight: bold;">
                                                                     <img src="img\Header\Services Header Icons\Services Header Icons\SaaS.png" alt="" height="25px" width="25px" style="margin-right: 5px;"> SaaS Development
+                                                                    <span style="display:block; font-size: 0.9em; color: #888; margin-left: 34px;">
+                                                                        Create custom cloud-based solutions for businesses
+                                                                    </span>
                                                                 </a>
-                                                            </div>
-                                                
-                                                            <div class="col-md-6" style="margin-top: -36px;">
-                                                                <a class="nav-link text-dark fw-bold" href="custom-website-development-services">
+                                                                <a class="nav-link text-dark" style="font-weight: bold;">
                                                                     <img src="img\Header\Services Header Icons\Services Header Icons\Web Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;"> Web Development
-                                                                </a>
-                                                                <a class="nav-link text-dark fw-bold" href="custom-shopify-store-development-services">
-                                                                    <img src="img\icons-for-index-page\shopping-bag(2).svg" alt="" height="25px" width="25px" style="margin-right: 5px;"> Shopify Store Development   
-                                                                </a>
-                                                                <a class="nav-link text-dark fw-bold" href="whatsApp-business-api-integration-services">
-                                                                    <img src="img\icons-for-index-page\whatsapp (3).png" alt="" height="25px" width="25px" style="margin-right: 5px;"> WhatsApp Business API Integration
+                                                                    <span style="display:block; font-size: 0.9em; color: #888; margin-left: 34px;">
+                                                                        Create robust and scalable websites for businesses
+                                                                    </span>
                                                                 </a>
                                                             </div>
-                                                
                                                         </div>
-                                                
-                                                        <!-- Right Section -->
-                                                        <div class="extra-content p-3 text-center" style="flex: 1; background-image: url('img/Header/Services Header Icons/Services Header Icons/Header CTA.png'); background-size: cover; background-position: center; border-left: 1px solid #ddd; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 0 15px 15px 0;">
-                                                            <p class="fw-bold text-white" style="line-height: normal; font-size: 24px;">Designed for <span style="color: #0053ce;"> <br>Success</span></p>
-                                                            <p class="text-white">Our services evolve your ideas into scalable, impactful solutions.</p>
-                                                            <button class="btn d-none d-md-inline-block btn-primary custom-button btn-outline text-color-light fw-semibold border-width-4 py-3 px-4"
-                                                                style="color: white; background: linear-gradient(90deg, #0052CD 0%, #000000 100%); border-radius: 20px !important; border: none; font-family: Arial, sans-serif; transition: all 0.3s ease; position: relative; overflow: hidden;"
-                                                                onmouseover="this.style.background='linear-gradient(90deg, #000000 0%, #0052CD 100%)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.3)'; this.style.transform='scale(1.05)';"
-                                                                onmouseout="this.style.background='linear-gradient(90deg, #0052CD 0%, #000000 100%)'; this.style.boxShadow='none'; this.style.transform='scale(1)';">
-                                                                <a href="contact-us" style="text-decoration: none; color: white; position: relative; z-index: 1;">
-                                                                    Talk With Our Experts
-                                                                </a>
-                                                                <span style="content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.2); transform: skewX(-45deg); transition: left 0.3s ease; z-index: 0;" 
-                                                                    onmouseover="this.style.left='100%';" 
-                                                                    onmouseout="this.style.left='-100%';">
-                                                                </span>
-                                                            </button>                                                  
+                                                    </div>
+                                            
+                                                    <!-- Right Section -->
+                                                    <div class="extra-content p-3 text-center" style="flex: 1; background-image: url('img/Header/Services Header Icons/Services Header Icons/Header CTA.png');background-size: cover;background-position: center; border-left: 1px solid #ddd; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 0 0 15px 0;">
+                                                        <p class="font-weight-bold" style="color: white;line-height: normal;font-size: 24px;">Designed for <span style="color: #0053ce;"> <br>Success</span></p>
+                                                        <p style="color: white;">Our services evolve your ideas into scalable, impactful solutions.</p>
+                                                        <button 
+                                                        class="btn d-none d-md-inline-block btn-primary custom-button btn-outline text-color-light font-weight-semibold border-width-4 py-3 px-4"
+                                                        style="color: white; background: linear-gradient(90deg, #0052CD 0%, #000000 100%); border-radius: 20px !important; border: none; font-family: Arial, sans-serif; transition: all 0.3s ease; position: relative; overflow: hidden;"
+                                                        onmouseover="this.style.background='linear-gradient(90deg, #000000 0%, #0052CD 100%)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.3)'; this.style.transform='scale(1.05)';"
+                                                        onmouseout="this.style.background='linear-gradient(90deg, #0052CD 0%, #000000 100%)'; this.style.boxShadow='none'; this.style.transform='scale(1)';"
+                                                    >
+                                                        <a href="contact-us" style="text-decoration: none; color: white; position: relative; z-index: 1;">
+                                                            Talk With Our Experts
+                                                        </a>
+                                                        <span style="content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.2); transform: skewX(-45deg); transition: left 0.3s ease; z-index: 0;" 
+                                                            onmouseover="this.style.left='100%';" 
+                                                            onmouseout="this.style.left='-100%';">
+                                                        </span>
+                                                    </button>                                                  </div>
+                                                </ul>
+                                                <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown" aria-labelledby="dropdownMenuButton">
+
+                                                    <a class="dropdown-item text-color-dark " href="https://www.routemaestro.com" target="_blank">
+                                                        <img src="img\Header\Services Header Icons\Services Header Icons\Custom Software Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;">Customer Software Development</a>
+                                                    <a class="dropdown-item text-color-dark" href="https://www.routemaestro.com" target="_blank"><img src="img\Header\Services Header Icons\Services Header Icons\E-Commerce.png" alt="" height="25px" width="25px" style="margin-right: 5px;">E-Commerce</a>
+                                                    <a class="dropdown-item text-color-dark" href="https://www.routemaestro.com" target="_blank"><img src="img\Header\Services Header Icons\Services Header Icons\Mobile Application Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;">Mobile App Development</a>
+                                                    <a class="dropdown-item text-color-dark" href="https://www.routemaestro.com" target="_blank"> <img src="img\Header\Services Header Icons\Services Header Icons\SaaS.png" alt="" height="25px" width="25px" style="margin-right: 5px;"> SaaS Development</a>
+                                                    <a class="dropdown-item text-color-dark" href="https://www.routemaestro.com" target="_blank"><img src="img\Header\Services Header Icons\Services Header Icons\Web Development.png" alt="" height="25px" width="25px" style="margin-right: 5px;">Web Develoment</a>
+                                                  </ul>
+                                            </li>                                               
+                                            
+                                            <li class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle industriesToggle"  style="cursor: pointer;">
+                                                    Industries
+                                                </a>
+                                                <ul class="dropdown-menu d-none d-lg-flex" style="width: 1200px; border-radius: 15px !important; height: 230px; display: flex; justify-content: center;padding: 0px; align-items: center;position: absolute; right: -350px;">
+                                                    <div class="row py-2 ps-3" style="flex: 2;">
+                                                        <div class="col-lg-4 " style="font-size: 16px;">
+                                            
+
+                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                            href="complaint-management-system">
+                                                            <img src="img\Header\Industry Header Icons\Custom CRM.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                            
+                                                          Custom  CRM</a>
+
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="education-app-development">
+                                                                <img src="img\Header\Industry Header Icons\Education.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                                    
+                                                                Education</a>
+
+                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                            href="enterprise-resource-planning">
+                                                            <img src="img\Header\Industry Header Icons\Enterprise Resource Planning.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                            ERP</a>
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                            href="healthcare-app-development">
+                                                            <img src="img\Header\Industry Header Icons\Healthacre.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                            Health Care</a>
+
                                                         </div>
-                                                    </ul>
-                                                    <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown" style="max-height: 550px;" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item text-color-dark" href="custom-software-development-services">
-                                                            <img src="img\Header\Services Header Icons\Services Header Icons\Custom Software Development.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
-                                                            Custom Software Development
-                                                        </a>
-                                                        <a class="dropdown-item text-color-dark" href="ecommerce-software-development-services">
-                                                            <img src="img\Header\Services Header Icons\Services Header Icons\E-Commerce.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
-                                                            E-Commerce
-                                                        </a>
-                                                        <a class="dropdown-item text-color-dark" href="custom-mobile-application-development-services">
-                                                            <img src="img\Header\Services Header Icons\Services Header Icons\Mobile Application Development.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
-                                                            Mobile App Development       
-                                                        </a>
-                                                        <a class="dropdown-item text-color-dark" href="saas-application-development-services">
-                                                            <img src="img\Header\Services Header Icons\Services Header Icons\SaaS.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
-                                                            SaaS Development
-                                                        </a>
-                                                        <a class="dropdown-item text-color-dark" href="custom-website-development-services">
-                                                            <img src="img\Header\Services Header Icons\Services Header Icons\Web Development.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
-                                                            Web Development
-                                                        </a>
-                                                        <a class="dropdown-item text-color-dark" href="custom-shopify-store-development-services">
-                                                            <img src="img\icons-for-index-page\shopping-bag(2).svg" alt="" height="25px" width="25px" style="margin-right: 2px;">
-                                                            Shopify Store Development   
-                                                        </a>
-                                                        <a class="dropdown-item text-color-dark" href="whatsApp-business-api-integration-services">
-                                                            <img src="img\icons-for-index-page\whatsapp (3).png" alt="" height="25px" width="25px" style="margin-right: 2px;">
-                                                            WhatsApp Business API Integration
-                                                        </a>
-                                                       
-                                                    </ul>
-                                                    
-                                                </li>                                            
-    
-                                                <li class="dropdown">
-                                                    <a class="dropdown-item dropdown-toggle industriesToggle"
-                                                        style="cursor: pointer;">
-                                                        Industries
-                                                    </a>
-                                                    <ul class="dropdown-menu d-none d-lg-flex"
-                                                        style="width: 1150px; border-radius: 15px !important;  display: flex; height: 230px;max-height: 230px; justify-content: center;padding: 0px; align-items: center;position: absolute; right: -350px;">
-                                                        <div class="row py-2 ps-3" style="flex: 2;">
-                                                            <div class="col-lg-4 " style="font-size: 14px;">
-                                                              
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="construction-management">
-                                                                    <img src="img/Construction Management Icons & Images/hard-hat.svg"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;
-                                                                            filter: invert(18%) sepia(89%) saturate(2785%) hue-rotate(218deg) brightness(92%) contrast(106%);
-                                                                        ">
-                                                                    Construction</a>
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="complaint-management-system">
-                                                                    <img src="img\Header\Industry Header Icons\Custom CRM.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-    
-                                                                    Custom CRM</a>
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="education-app-development">
-                                                                    <img src="img\Header\Industry Header Icons\Education.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-    
-                                                                    Education</a>
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="enterprise-resource-planning">
-                                                                    <img src="img\Header\Industry Header Icons\Enterprise Resource Planning.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-                                                                    ERP</a>
-                                                               
-    
-                                                            </div>
-    
-                                                            <div class="col-lg-4" style="font-size: 14px;">
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                style="font-weight: bold;"
-                                                                href="healthcare-app-development">
-                                                                <img src="img\Header\Industry Header Icons\Healthacre.png"
-                                                                    alt="" height="25px" width="25px"
-                                                                    style="margin-right: 2px;">
-                                                                Health Care</a>
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="interior-design-app-development">
-                                                                    <img src="img\Header\Industry Header Icons\Interior Architecture.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 0px;">
+
+                                                        <div class="col-lg-4" style="font-size: 16px;">
+
+                                                           
+
+                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;" href="interior-design-app-development">
+                                                                    <img src="img\Header\Industry Header Icons\Interior Architecture.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
                                                                     Interior & Architecture</a>
-    
-                                                                    <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;" href="kindergarten-school-management">
-                                                                    <img src="img\Header\Product Header Icons\Kindergarten School Management.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-                                                                    Kindergarten</a>
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="library-management-system">
-                                                                    <img src="img\Header\Industry Header Icons\Library.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-                                                                    Library</a>
-    
-                                                            </div>
-    
-                                                            <div class="col-lg-4" style="font-size: 14px;">
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="logistics-software-development">
-                                                                    <img src="img\Header\Industry Header Icons\Logistics.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-                                                                    Logistics</a>
-    
-                                                                    <a class="nav-link text-dark py-2" href="manufacturing"
-                                                                    style="font-weight: bold;">
-                                                                    <img src="img\Header\Industry Header Icons\Manufacturing.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-                                                                    Manufacturing</a>
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="real-estate-app-development">
-                                                                    <img src="img\Header\Industry Header Icons\Real Estate.png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-                                                                    Real Estate</a>
-    
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    style="font-weight: bold;"
-                                                                    href="travel-app-development">
-                                                                    <img src="img\Header\Industry Header Icons\Travel (2).png"
-                                                                        alt="" height="25px" width="25px"
-                                                                        style="margin-right: 2px;">
-                                                                    Travel
-                                                                    & Tourism</a>
-    
-                                                               
-                                                            </div>
+
+                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="https://www.routemaestro.com" target="_blank">
+                                                                <img src="img\Header\Product Header Icons\Kindergarten School Management.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                                Kindergarten</a>
+
+                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="library-management-system">
+                                                                <img src="img\Header\Industry Header Icons\Library.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                                Library</a>  
+
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="logistics-software-development">
+                                                                <img src="img\Header\Industry Header Icons\Logistics.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                                Logistics</a>
+
+                                                                 
+
                                                         </div>
-                                                        <!-- Right Section -->
-                                                        <div class="extra-content p-3 text-center"
-                                                            style="flex: 1; background-image: url('img/Header/Industry Header Icons/CTA (5).png');background-size: cover;background-position: center; border-left: 1px solid #ddd; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 0 15px 15px 0;">
-                                                            <p class="font-weight-bold"
-                                                                style="color: white;font-size: 24px;line-height: normal;">
-                                                                Crafted for <br> <span
-                                                                    style="color: #0053ce;">Excellence</span></p>
-                                                            <p style="color: white;">We craft personalized solutions
-                                                                across industries. To know more, consult with our
-                                                                industry experts today!</p>
-                                                            <button
-                                                                class="btn d-none d-md-inline-block btn-primary custom-button btn-outline text-color-light font-weight-semibold border-width-4 py-3 px-4"
-                                                                style="color: white; background: linear-gradient(90deg, #0052CD 0%, #000000 100%); border-radius: 20px !important; border: none; font-family: Arial, sans-serif; transition: all 0.3s ease; position: relative; overflow: hidden;"
-                                                                onmouseover="this.style.background='linear-gradient(90deg, #000000 0%, #0052CD 100%)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.3)'; this.style.transform='scale(1.05)';"
-                                                                onmouseout="this.style.background='linear-gradient(90deg, #0052CD 0%, #000000 100%)'; this.style.boxShadow='none'; this.style.transform='scale(1)';">
-                                                                <a href="contact-us"
-                                                                    style="text-decoration: none; color: white; position: relative; z-index: 1;">
-                                                                    Talk With Our Experts
+
+                                                        <div class="col-lg-4" style="font-size: 16px;">
+
+                                                          
+                                                 
+                                                            
+
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;" href="real-estate-app-development">
+                                                                <img src="img\Header\Industry Header Icons\Real Estate.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                            Real Estate</a>
+
+                                                            
+
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;" href="travel-app-development">
+                                                                <img src="img\Header\Industry Header Icons\Travel (2).png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                            Travel
+                                                            & Tourism</a>
+
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;">
+                                                                <img src="img\Header\Industry Header Icons\Manufacturing.png" alt="" height="25px" width="25px" style="margin-right: 2px;">
+                                                                Manufacturing</a>       
+
+                                                            
+
+                                                        </div>
+                                                    </div>
+                                                      <!-- Right Section -->
+                                                      <div class="extra-content p-3 text-center" style="flex: 1; background-image: url('img/Header/Industry Header Icons/CTA (5).png');background-size: cover;background-position: center; border-left: 1px solid #ddd; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 0 0 15px 0;">
+                                                        <p class="font-weight-bold" style="color: white;font-size: 24px;line-height: normal;">Crafted for <br> <span style="color: #0053ce;">Excellence</span></p>
+                                                        <p style="color: white;">We craft personalized solutions across industries. To know more, consult with our industry experts today!</p>
+                                                        <button 
+                                                        class="btn d-none d-md-inline-block btn-primary custom-button btn-outline text-color-light font-weight-semibold border-width-4 py-3 px-4"
+                                                        style="color: white; background: linear-gradient(90deg, #0052CD 0%, #000000 100%); border-radius: 20px !important; border: none; font-family: Arial, sans-serif; transition: all 0.3s ease; position: relative; overflow: hidden;"
+                                                        onmouseover="this.style.background='linear-gradient(90deg, #000000 0%, #0052CD 100%)'; this.style.boxShadow='0 4px 15px rgba(0, 0, 0, 0.3)'; this.style.transform='scale(1.05)';"
+                                                        onmouseout="this.style.background='linear-gradient(90deg, #0052CD 0%, #000000 100%)'; this.style.boxShadow='none'; this.style.transform='scale(1)';"
+                                                    >
+                                                        <a href="contact-us" style="text-decoration: none; color: white; position: relative; z-index: 1;">
+                                                            Talk With Our Experts
+                                                        </a>
+                                                        <span style="content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.2); transform: skewX(-45deg); transition: left 0.3s ease; z-index: 0;" 
+                                                            onmouseover="this.style.left='100%';" 
+                                                            onmouseout="this.style.left='-100%';">
+                                                        </span>
+                                                    </button>                                                  </div>
+                                                </ul>
+                                                <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown"  style="max-height: 450px;" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item text-color-dark " href="complaint-management-system"><img src="img\Header\Industry Header Icons\Custom CRM.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Custom CRM</a>
+                                                    <a class="dropdown-item text-color-dark" href="education-app-development"><img src="img\Header\Industry Header Icons\Education.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Education</a>
+                                                    <a class="dropdown-item text-color-dark" href="enterprise-resource-planning"><img src="img\Header\Industry Header Icons\Enterprise Resource Planning.png" alt="" height="25px" width="25px" style="margin-right: 2px;">ERP</a>
+                                                    <a class="dropdown-item text-color-dark" href="healthcare-app-development"><img src="img\Header\Industry Header Icons\Healthacre.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Health Care</a>
+                                                    <a class="dropdown-item text-color-dark" href="interior-design-app-development"><img src="img\Header\Industry Header Icons\Interior Architecture.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Interior & Architecture</a>
+                                                    <a class="dropdown-item text-color-dark" href="https://www.routemaestro.com" target="_blank"><img src="img\Header\Product Header Icons\Kindergarten School Management.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Kindergarten</a>
+                                                    <a class="dropdown-item text-color-dark" href="library-management-system"><img src="img\Header\Industry Header Icons\Library.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Library</a>
+                                                    <a class="dropdown-item text-color-dark" href="logistics-software-development"><img src="img\Header\Industry Header Icons\Logistics.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Logistics</a>
+                                                    <a class="dropdown-item text-color-dark" href="real-estate-app-development"><img src="img\Header\Industry Header Icons\Real Estate.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Real Estate</a>
+                                                    <a class="dropdown-item text-color-dark" href="travel-app-development"><img src="img\Header\Industry Header Icons\Travel (2).png" alt="" height="25px" width="25px" style="margin-right: 2px;">Travel & Tourism</a>
+                                                    <a class="dropdown-item text-color-dark" href="https://www.routemaestro.com" target="_blank"><img src="img\Header\Industry Header Icons\Manufacturing.png" alt="" height="25px" width="25px" style="margin-right: 2px;">Manufacturing</a>
+                                                  </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle industriesToggle" style="cursor: pointer;">
+                                                    Products
+                                                </a>
+                                                <ul class="dropdown-menu d-none d-lg-flex" style="width: 360px;border-radius: 15px !important;"
+                                                    >
+                                                    <div class="row py-1 px-2 ps-lg-4">
+                                                        <div style="font-size: 17px;">
+
+                                                            <!-- <a class="nav-link text-dark py-2" style="font-weight: bold;">
+                                                                    <img src="img\Header\Product Header Icons\Kindergarten School Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+                                                                KinderConnect</a> -->
+
+
+                                                            <!-- <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="https://www.routemaestro.com" target="_blank">
+                                                                <img src="img\Header\Product Header Icons\Task Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+
+                                                                JusDoIt</a> -->
+
+
+                                                            <a class="nav-link text-dark py-2" href="https://www.routemaestro.com" target="_blank" style="font-weight: bold;">
+                                                                    <img src="img/footerlogonew.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+                                                                    RouteMaestro
                                                                 </a>
-                                                                <span
-                                                                    style="content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.2); transform: skewX(-45deg); transition: left 0.3s ease; z-index: 0;"
-                                                                    onmouseover="this.style.left='100%';"
-                                                                    onmouseout="this.style.left='-100%';">
-                                                                </span>
-                                                            </button>
+
+
+                                                            <!-- <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="https://www.routemaestro.com" target="_blank">
+                                                                    <img src="img\Header/Product Header Icons/insurance (1).png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+                                                                Insurance Safe</a> -->
                                                         </div>
-                                                    </ul>
-                                                    <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown"
-                                                        style="max-height: 450px;" aria-labelledby="dropdownMenuButton">
-                                                        <a class="dropdown-item text-color-dark "
-                                                            href="complaint-management-system"><img
-                                                                src="img\Header\Industry Header Icons\Custom CRM.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Custom CRM</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="education-app-development"><img
-                                                                src="img\Header\Industry Header Icons\Education.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Education</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="enterprise-resource-planning"><img
-                                                                src="img\Header\Industry Header Icons\Enterprise Resource Planning.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">ERP</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="healthcare-app-development"><img
-                                                                src="img\Header\Industry Header Icons\Healthacre.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Health Care</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="interior-design-app-development"><img
-                                                                src="img\Header\Industry Header Icons\Interior Architecture.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Interior & Architecture</a>
-                                                        <a class="dropdown-item text-color-dark" href="kindergarten-school-management"><img
-                                                                src="img\Header\Product Header Icons\Kindergarten School Management.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Kindergarten</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="library-management-system"><img
-                                                                src="img\Header\Industry Header Icons\Library.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Library</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="logistics-software-development"><img
-                                                                src="img\Header\Industry Header Icons\Logistics.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Logistics</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="real-estate-app-development"><img
-                                                                src="img\Header\Industry Header Icons\Real Estate.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Real Estate</a>
-                                                        <a class="dropdown-item text-color-dark"
-                                                            href="travel-app-development"><img
-                                                                src="img\Header\Industry Header Icons\Travel (2).png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Travel & Tourism</a>
-                                                        <a class="dropdown-item text-color-dark" href="manufacturing"><img
-                                                                src="img\Header\Industry Header Icons\Manufacturing.png"
-                                                                alt="" height="25px" width="25px"
-                                                                style="margin-right: 2px;">Manufacturing</a>
-                                                    </ul>
-                                                </li>
-    
-                                                <li class="dropdown">
-                                                    <a class="dropdown-item dropdown-toggle industriesToggle" style="cursor: pointer;">
-                                                        Products
-                                                    </a>
-                                                    <ul class="dropdown-menu d-none d-lg-flex" style="width: 360px;border-radius: 15px !important;"
-                                                        >
-                                                        <div class="row py-1 px-2 ps-lg-4">
-                                                            <div style="font-size: 17px;">
-    
-                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;">
-                                                                        <img src="img\Header\Product Header Icons\Kindergarten School Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-                                                                    KinderConnect</a>
-    
-    
-                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;"
-                                                                    href="#">
-                                                                    <img src="img\Header\Product Header Icons\Task Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-    
-                                                                    JusDoIt</a>
-    
-    
-                                                                <a class="nav-link text-dark py-2" href="#" style="font-weight: bold;">
-                                                                        <img src="img\Header\Product Header Icons\Travel (2).png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-                                                                        RouteMaestro
-                                                                    </a>
-    
-    
-                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;"
-                                                                    href="#">
-                                                                        <img src="img\Header/Product Header Icons/insurance (1).png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-                                                                    Insurance Safe</a>
-                                                            </div>
+                                                    </div>
+                                                </ul>
+                                                <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown" style="width: 330px;border-radius: 15px !important;"
+                                                    >
+                                                    <div class="row py-1 px-2 ps-lg-4">
+                                                        <div style="font-size: 17px;">
+
+                                                            <!-- <a class="nav-link text-dark py-2" style="font-weight: bold;">
+                                                                    <img src="img\Header\Product Header Icons\Kindergarten School Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+                                                                KinderConnect</a> -->
+
+
+                                                            <!-- <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="https://www.routemaestro.com" target="_blank">
+                                                                <img src="img\Header\Product Header Icons\Task Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+
+                                                                JusDoIt</a> -->
+
+
+                                                            <a class="nav-link text-dark py-2" href="https://www.routemaestro.com" target="_blank" style="font-weight: bold;">
+                                                                    <img src="img/footerlogonew.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+                                                                    RouteMaestro
+                                                                </a>
+
+
+                                                            <!-- <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                                href="#">
+                                                                    <img src="img\Header/Product Header Icons/insurance (1).png" alt="" width="25px" height="25px" style="margin-right: 4px;">
+                                                                Insurance Safe</a> -->
                                                         </div>
-                                                    </ul>
-                                                    <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown" style="width: 330px;border-radius: 15px !important;"
-                                                        >
-                                                        <div class="row py-1 px-2 ps-lg-4">
-                                                            <div style="font-size: 17px;">
-    
-                                                                <a class="nav-link text-dark py-2" >
-                                                                        <img src="img\Header\Product Header Icons\Kindergarten School Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-                                                                    KinderConnect</a>
-    
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    href="#">
-                                                                    <img src="img\Header\Product Header Icons\Task Management.png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-    
-                                                                    JusDoIt</a>
-    
-    
-                                                                <a class="nav-link text-dark py-2" href="#">
-                                                                        <img src="img\Header\Product Header Icons\Travel (2).png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-                                                                        RouteMaestro
-                                                                    </a>
-    
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                                    href="#">
-                                                                        <img src="img\Header/Product Header Icons/insurance (1).png" alt="" width="25px" height="25px" style="margin-right: 4px;">
-                                                                    Insurance Safe</a>
-                                                            </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a class="dropdown-item dropdown-toggle industriesToggle active" style="cursor: pointer;">
+                                                    Resources
+                                                </a>
+                                                <ul class="dropdown-menu d-none d-lg-flex" style="width: 250px;border-radius: 15px !important; border-block-color: inherit;"
+                                                    >
+                                                    <div class="row py-1 px-2 ps-lg-4">
+                                                        <div style="font-size: 17px;">
+
+                                                            <a class="nav-link text-dark py-2 " href="blog" style="font-weight: bold;">
+                                                               <img src="img\Header\Resources Header icons\Blog.png" alt="" height="25px" width="25px">
+                                                                Blogs</a>
+
+
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                    
+                                                              >
+                                                              <img src="img\Header\Resources Header icons\Case Studies (2).png" alt="" height="25px" width="25px">
+                                                                Case Studies</a>
+
                                                         </div>
-                                                    </ul>
-                                                </li>
-                                                
-                                                <li class="dropdown">
-                                                    <a class="dropdown-item dropdown-toggle industriesToggle" style="cursor: pointer;">
-                                                        Resources
-                                                    </a>
-                                                    <ul class="dropdown-menu d-none d-lg-flex" style="width: 250px;border-radius: 15px !important; border-block-color: inherit;"
-                                                        >
-                                                        <div class="row py-1 px-2 ps-lg-4">
-                                                            <div style="font-size: 17px;">
-    
-                                                                <a class="nav-link text-dark py-2 " href="blog" style="font-weight: bold;">
-                                                                   <img src="img\Header\Resources Header icons\Blog.png" alt="" height="25px" width="25px">
-                                                                    Blogs</a>
-    
-    
-                                                                <a class="nav-link text-dark py-2" style="font-weight: bold;"
-                                                        
-                                                                  >
-                                                                  <img src="img\Header\Resources Header icons\Case Studies (2).png" alt="" height="25px" width="25px">
-                                                                    Case Studies</a>
-    
-                                                            </div>
+                                                    </div>
+                                                </ul>
+                                                <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown" style="width: 250px;border-radius: 15px !important; border-block-color: inherit;"
+                                                    >
+                                                    <div class="row py-1 px-2 ps-lg-4">
+                                                        <div style="font-size: 17px;">
+
+                                                            <a class="nav-link text-dark py-2 " href="blog" style="font-weight: bold;">
+                                                               <img src="img\Header\Resources Header icons\Blog.png" alt="" height="25px" width="25px">
+                                                                Blogs</a>
+
+
+                                                            <a class="nav-link text-dark py-2" style="font-weight: bold;"
+                                                    
+                                                              >
+                                                              <img src="img\Header\Resources Header icons\Case Studies (2).png" alt="" height="25px" width="25px">
+                                                                Case Studies</a>
+
                                                         </div>
-                                                    </ul>
-                                                    <ul class="custom-togglingdropdown-hidden d-lg-none p-0 industriesDropdown" style="width: 250px;border-radius: 15px !important; border-block-color: inherit;"
-                                                        >
-                                                        <div class="row py-1 px-2 ps-lg-4">
-                                                            <div style="font-size: 17px;">
-    
-                                                                <a class="nav-link text-dark py-2 " href="blog">
-                                                                   <img src="img\Header\Resources Header icons\Blog.png" alt="" height="25px" width="25px">
-                                                                    Blogs</a>
-    
-    
-                                                                <a class="nav-link text-dark py-2"
-                                                        
-                                                                  >
-                                                                  <img src="img\Header\Resources Header icons\Case Studies (2).png" alt="" height="25px" width="25px">
-                                                                    Case Studies</a>
-    
-                                                            </div>
-                                                        </div>
-                                                    </ul>
-                                                </li>
+                                                    </div>
+                                                </ul>
+                                            </li>
                                                 <!-- <li class="dropdown">
                                                     <a class="dropdown-item dropdown-toggle" style="cursor: pointer;">
                                                         Portfolio
@@ -965,17 +752,17 @@
                 <div class="container d-flex justify-content-center align-items-center" style="height: 400px;">
                     <div class="row text-center ">
                         <div class="col-12 align-self-center text-white">
-                            <h1 class="fw-bold mb-4 px-3" style="letter-spacing: 2px; line-height: 4.5rem;font-size: 3rem;">
-                                How Did Travel App Development Become Crucial In The Tourism Industry
+                            <h1 class="fs-2 fs-md-3 fs-lg-4 fw-bold mb-4 px-3" style="letter-spacing: 2px; line-height: normal;">
+                                How Did Travel App Development <br class="d-none d-md-block"> Become Crucial In The Tourism Industry
                             </h1>
                             <div class="d-flex justify-content-center mt-4 mb-4 flex-wrap justify-content-md-center">
-                                <span class="d-flex align-items-center fs-md-5 mb-md-0 me-3" style="font-size: 1.5rem;">
+                                <span class="d-flex align-items-center fs-6 fs-md-5 mb-md-0 me-3">
                                     <img src="img/blog/Account.png" alt="user" height="20px" width="20px" class="me-2"> Arham Jain
                                 </span>
-                                <span class="d-flex align-items-center fs-md-5  mb-md-0 me-3" style="font-size: 1.5rem;">
+                                <span class="d-flex align-items-center fs-6 fs-md-5  mb-md-0 me-3">
                                     <img src="img/blog/Calendar (5).png" alt="calendar" height="20px" width="20px" class="me-2"> 18/06/2024
                                 </span>
-                                <span class="d-flex align-items-center fs-md-5" style="font-size: 1.5rem;">
+                                <span class="d-flex align-items-center fs-6 fs-md-5">
                                     <img src="img/blog/Timer.png" alt="clock" height="20px" width="20px" class="me-2"> 7 min
                                 </span>
                             </div>
@@ -991,7 +778,7 @@
             <section id="section2" class="section-blog">
                 <div class="container container-blog" style="max-width: 1700px !important;">
                   <div class="leftDiv mt-5">
-                    <div style="margin-bottom: 15px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9; padding: 7px;max-width: 270px;">
+                    <div style="margin-bottom: 15px; display: flex; align-items: center; border: 1px solid #ccc; border-radius: 5px; background-color: #f9f9f9; padding: 7px;">
                         <!-- Font Awesome Icon -->
                         <img src="img/blog/Travel (2).png" alt="" height="20px" width="20px">
                         <!-- Input Field -->
@@ -1010,27 +797,15 @@
                     <div class="blog-sidebar pt-4 pt-lg-0" style="display: flex;justify-content: flex-start;max-height: 450px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100" >
                         <aside class="sidebar" style="max-width: 270px; ">
                             <div class="px-2 mb-4 pt-4 pb-4 pl-3 pr-3 border-right" style="background-color: #e7e7e7; border-radius: 12px; color: black;">
-                                <h3 class="text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline; text-align: center;">Table Of Contents</h3>
-                                <div style="max-height: 260px; overflow-y: auto; scrollbar-color: #0053ce #e7e7e7; scrollbar-width: thin; padding-right: 10px;">
-                                    <p class="m-0" style="font-size: 14px;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;display: flex;align-items: flex-start;color: #000;">
-                                        <span style="margin-right: 5px;">1.</span>
-                                        <a href="travel-app-development-in-tourism#1" style="color: #000;">Rise of Mobile Technology in Travel Industry</a></p>
-                                    <p class="m-0" style="font-size: 14px;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;display: flex;align-items: flex-start;color: #000;">
-                                        <span style="margin-right: 5px;">2.</span>
-                                        <a href="travel-app-development-in-tourism#2" style="color: #000;">Why Are Travel Apps Preferred For Travel?</a></p>
-                                    <!-- <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="travel-app-development-in-tourism#3" style="color: #000;">3. Enhancing User Experience Through Travel Apps</a></p> -->
-                                    <p class="m-0" style="font-size: 14px;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;display: flex;align-items: flex-start;color: #000;">
-                                        <span style="margin-right: 5px;">3.</span>
-                                        <a href="travel-app-development-in-tourism#3" style="color: #000;">Unlocking Digital Opportunities - Travel Apps in the Tourism Sector</a></p>
-                                    <p class="m-0" style="font-size: 14px;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;display: flex;align-items: flex-start;color: #000;">
-                                        <span style="margin-right: 5px;">4.</span>
-                                        <a href="travel-app-development-in-tourism#4" style="color: #000;">Integration of Artificial Intelligence and Machine Learning in Travel Apps</a></p>
-                                    <p class="m-0" style="font-size: 14px;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;display: flex;align-items: flex-start;color: #000;">
-                                        <span style="margin-right: 5px;">5.</span>
-                                        <a href="travel-app-development-in-tourism#5" style="color: #000;">Future Trends in Travel App Development</a></p>
-                                    <p class="m-0" style="font-size: 14px;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;display: flex;align-items: flex-start;color: #000;">
-                                        <span style="margin-right: 5px;">6.</span>
-                                        <a href="travel-app-development-in-tourism#6" style="color: #000;">Conclusion</a></p>
+                                <h3 class="text-capitalize text-3-5 m-0 mb-3" style="text-decoration: underline; text-align: center;">Table Of Content</h3>
+                                <div style="max-height: 365px; overflow-y: auto; scrollbar-color: #0053ce #e7e7e7; scrollbar-width: thin; padding-right: 10px;">
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#rise-mobile" style="color: #000;">1. Rise of Mobile Technology in Travel Industry</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#travel-apps-preferred" style="color: #000;">2. Why Are Travel Apps Preferred For Travel?</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#user-experience" style="color: #000;">3. Enhancing User Experience Through Travel Apps</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#digital-opportunities" style="color: #000;">4. Unlocking Digital Opportunities - Travel Apps in the Tourism Sector</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#ai-integration" style="color: #000;">5. Integration of Artificial Intelligence and Machine Learning in Travel Apps</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#future-trends" style="color: #000;">6. Future Trends in Travel App Development</a></p>
+                                    <p class="m-0" style="font-size: 0.85rem;padding-left: 3px;padding-right: 3px;padding-bottom: 15px;"><a href="blog-11#conclusion" style="color: #000;">7. Conclusion</a></p>
                                 </div>
                             </div>
                         </aside>
@@ -1044,21 +819,21 @@
                                 According to a <strong style="color: #0053ce;font-weight: 600;text-decoration: underline;"> <a href="https://www.statista.com/statistics/1229155/travel-app-usage-worldwide-before-since-covid-19/">report by Statista</a>  </strong>, 28% of the travelers worldwide, have used a travel agency travel mobile app to book different travel services before the Covid - 19, and at the same time 33% of the travelers worldwide have said that they would like to use travel agency specific travel application in future to plan their travel trips. <br><br>
                             </p>
                                 <div class="flex justify-content-center align-items-center">
-                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-none d-md-block" alt="" width="100%" height="auto">
-                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-block d-md-none" alt="" width="100%" height="auto">
+                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-none d-md-block" alt="" width="100%" height="550px">
+                                <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 1.png" class="d-block d-md-none" alt="" width="100%" height="250px">
                                 </div>
                               <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;"> This blog will help you to understand how travel app development is becoming a key factor in the travel and tourism industry, with some other key aspects like, how travel apps can increase the travel experience of travelers by incorporating modern technology in these apps. So why to wait, let’s deep dive into the details!  <br><br>
                             </p>
 
                             <section class="blog-section-3 my-4 d-flex justify-content-center align-items-center">
                                 <div class="container">
-                                    <div class="row bg-primary text-white align-items-center mx-auto" style="max-width: 750px; border-radius: 10px;">
+                                    <div class="row bg-primary text-white align-items-center p-4 mx-auto" style="max-width: 750px; border-radius: 10px;">
                                         <!-- Left Side (Heading & Subheading) - Display first on large screens -->
                                         <div class="col-12 col-md-7 order-1 order-md-0 pe-md-4 text-center text-md-start">
                                             <h1 class="h5 fw-bold mb-3">
                                                 Capitalize Your Travel Business In The Rapidly Growing $2 Billion+ Travel App Market
                                             </h1>
-                                            <a href="contact-us" 
+                                            <a href="#" 
                                             class="btn btn-light fw-bold px-4 py-2 rounded-pill" 
                                             style="font-size: 12px; border-radius: 20px !important; transition: all 0.3s ease; background-color: light; color: black; border: none;"
                                             onmouseover="this.style.backgroundColor='black'; this.style.color='white';"
@@ -1080,14 +855,14 @@
                             </section>
                             
 
-                            <h2 id="1" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">The Rise of Mobile Technology in Travel</h2>
+                            <h2 id="rise-mobile" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">The Rise of Mobile Technology in Travel</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">Travel applications make it easy and efficient for travelers to organize their trips, get information on vital tourist places, and help travelers to stay organized while traveling. These travel applications have several features including flight booking, hotel bookings as well as a reservation at local tourist attractions and restaurants; with real-time updates on weather and flights. <br><br>
                                 Furthermore, the advent of mobile technology has opened new doors for travel companies and travel service providers. With the travel mobile app, travel service providers can now communicate directly with their clients and resolve their queries, provide their clients with <strong style="color: #0053ce;text-decoration: underline;"> <a href="travel-app-development">customized travel packages</a>  </strong> service based on their customer's travel persona, with a simple and user-friendly booking and online payment portal. Additionally, this is also a way of ensuring that consumers are satisfied with the travel services while at the same time, it also helps the travel service providers to gather vital data about their customer's travel behavior as well as their travel preferences. <br><br>
                                 As per the <strong style="color: #0053ce;text-decoration: underline;"> <a href="https://www.statista.com/forecasts/1309624/worldwide-revenue-of-travel-apps">report by Statista </a> </strong> , the travel application market is forecasted to increase continuously from 2021, right just after the covid. Currently, the capitalization of the travel app market is at $1.25B US Dollars and it is expected that the travel app market will reach the mark of $2 Billion US dollars by 2027. <br> <br>
                             </p>
                             <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Graph 2.png" alt="" width="100%" height="auto">
 
-                            <h2 id="2" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Why Are Travel Apps Preferred For Travel? </h2>
+                            <h2 id="travel-apps-preferred" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Why Are Travel Apps Preferred For Travel? </h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">With the rise in modern technology, travel apps have also transformed how people book and enjoy their travel trips. Many travel mobile applications provide various benefits, such as booking flight tickets, hotels, and making a personalized travel itinerary with real-time price updates on flights and hotel reservations that traditional approaches just cannot match.</p>
                     
                                 <div id="user-experience" class="container zig-zag" style="margin-top: 48px;" >
@@ -1110,7 +885,7 @@
                                         <div class="col-lg-4 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-2">
                                             <div class="p-absolute left-0"></div>
                                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                                <img class="business-visiblity" width="100%" height="480" src="img\blog\AscentiaLabsBlog1Images\young-woman-jumping-isolated-blue 1.png" alt="Authenticity and Credibility" />
+                                                <img class="business-visiblity" width="90%" height="480" src="img\blog\AscentiaLabsBlog1Images\young-woman-jumping-isolated-blue 1.png" alt="Authenticity and Credibility" />
                                             </div>
                                         </div>
                                     </div>
@@ -1121,7 +896,7 @@
                                         <div class="col-lg-4 text-center p-relative pt-2 max-width-custom-1 order-1 order-lg-1">
                                             <div class="p-absolute right-0"></div>
                                             <div data-plugin-float-element data-plugin-options="{'startPos': 'bottom', 'speed': 10.0, 'transition': true, 'transitionDuration': 1000}">
-                                                <img class="increased-visiblity" width="100%" height="auto" src="img\blog\AscentiaLabsBlog1Images\tourist-pointing-lateral 1.png" alt="Increase visibility" />
+                                                <img class="increased-visiblity" width="100%" height="400" src="img\blog\AscentiaLabsBlog1Images\tourist-pointing-lateral 1.png" alt="Increase visibility" />
                                             </div>
                                         </div>
                                         <div class="col-lg-8  text-lg-start order-2 order-lg-2 mt-2 border-left" style="border-left: 3px solid #333!important;">
@@ -1176,19 +951,19 @@
                                     </div>
                                 </div>
 
-                            <h2 id="3" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Unlocking Digital Opportunities - Travel App in the Travel Tourism Sector</h2>
+                            <h2 id="digital-opportunities" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Unlocking Digital Opportunities - Travel App in the Travel Tourism Sector</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">Travel applications are creating new digital transformations & opportunities in the travel and tourism industry by changing the way people plan, book, and experience their travel trips. <br><br>
                               The Impact of Travel Mobile Apps on the Travel Tourism Industry <br>
                                According to travel and tourism industry statistics:</p>
     
                                <div class="text-center">
-                               <img src="img/blog/AscentiaLabsBlog1Images/Number Game Section.png" alt="" width="100%" height="auto">
+                               <img src="img/blog/AscentiaLabsBlog1Images/Number Game Section.png" alt="" width="90%" height="auto">
                             </div>
                             <br>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;"> The above data clearly shows us the importance and the rising demand for travel apps among travelers. Let's now take a deep dive and delve into how AI (Artificial Intelligence) and Machine Learning two modern and widely used technologies are integrated into travel apps, through which travel companies, agencies, and agents can provide tailored travel experiences to their clients. <br>
                             </p>
 
-                            <h2 id="4" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Integration of AI and Machine Learning in Travel Apps</h2>
+                            <h2 id="ai-integration" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Integration of AI and Machine Learning in Travel Apps</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">The integration of AI (Artificial Intelligence) and Machine Learning in travel apps has transformed the way travelers travel the world. Such technologies enable travel apps to deliver personalized and customized travel recommendations to consumers, by doing predictive analysis of the traveler's data and providing real-time support to travelers, thereby improving the efficiency and overall enjoyment of consumers' travel experience. <br><br>
                              <img src="img/blog/AscentiaLabsBlog1Images/Blog 1 Integration of AI & ML.png" alt="" width="100%" height="auto">
                              With predictive analysis, artificial intelligence and machine learning in travel apps can analyze massive amounts of traveler data, such as the latest travel trends among different travelers around the world, weather patterns, to forecast future travel patterns and provide tourists with personalized travel recommendations based on the findings. For example, if a traveler is planning to visit a nearby beach during their ongoing travel trip, the travel app will provide the consumer with the list of best beaches in the nearby location of the traveler, with the indication of the optimal time to go based on past weather data.
@@ -1196,7 +971,7 @@
                              Furthermore, AI and Machine Learning can also help to improve the safety and security elements of travel apps. These technologies can examine user travel behavior and trends to identify potential threats or abnormalities, such as fraudulent activity or dangerous travel routes., and by identifying these dangers in real time, travel applications can present travel users with timely alerts and recommendations to ensure their safety while traveling.
                             </p>
 
-                            <h2 id="5" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Future Trends in Travel App Development</h2>
+                            <h2 id="future-trends" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Future Trends in Travel App Development</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">Virtual Reality (VR) and Augmented Reality (AR):  AR and VR have the potential to completely transform the way we travel the world. In the future, travel apps may include VR and AR elements that allow users to visually explore tourist places, observe famous tourist attractions in 3D, and receive real-time information and insights.
                                 <br><br>
                                 Voice Recognition: With the popularity and the advancement of AI in voice assistants and with 93.7% of search queries being answered perfectly by voice assistants, it is now possible to say that travel apps may include voice recognition in the coming 2-3 years. This means that users will now have the ability to utilize voice commands to search for and book travel services such as flight tickets, hotel bookings, and reservations, which simplifies the entire travel booking process.
@@ -1204,7 +979,7 @@
                                 AI Chatbot-Based Customer Support: A number of travel apps currently use AI chatbots for different travel services to provide quick customer support and guidance to travelers. Travelers are using AI chatbots to know any specific information they want to know about their travel before, during, or after their travel journey.
                             </p>
 
-                            <h2 id="6" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Conclusion</h2>
+                            <h2 id="conclusion" style="font-size: 1.8rem;font-weight: 500;color: #000;margin-bottom: 10px;margin-top: 30px;">Conclusion</h2>
                             <p  style="font-size: 1rem;text-align: left;color: black;line-height: 23px;">To summarize, travel app development has become a crucial thing in the travel and tourism industry, as we now know how travel apps can transform travel plans and increase the overall experience of the travel customers during their travel trip. These apps provide the users with real-time access to flight bookings, hotel bookings with personalized travel recommendations to consumers. Such travel applications have also promoted sustainability in travel and tourism practices by harnessing technology, in addition to improving cost efficiency and facilitating communication. As the travel tourism sector evolves, travel applications will play an increasingly important role in driving innovation and changing the future of travel and tourism industry through improved accessibility and efficiency, with an increased awareness on eco tourism.
                             </p>
 
@@ -1233,8 +1008,8 @@
                                <input type="text" name="message" placeholder="Message" id="message"
                                       style="width: 100%; padding: 2px; margin-bottom: 10px; background: transparent; border-bottom: 1px solid white; color: white; outline: none; font-size: 0.9rem;border-top: none;border-left: none;border-right: none;">
                                       <small class="error" id="messageError"></small>
-                               <button type="submit" class="btn-color"
-                                       style="width: 100%; padding: 5px;margin-top: 10px; border: none; border-radius: 25px; cursor: pointer;">
+                               <button type="submit" 
+                                       style="width: 100%; padding: 5px;margin-top: 10px; background: #426CC1; color: #fff; border: none; border-radius: 25px; cursor: pointer;">
                                    Submit
                                </button>
                                <div id="formMessage" class="form-message"></div>
@@ -1245,7 +1020,7 @@
                 </div>
               </section>
             
-              <section class="blog-section-2 container py-5" style="max-width: 1200px; margin: 70px auto 70px;">
+              <section class="blog-section-2 container py-5" style="max-width: 1200px; margin: 130px auto 70px;">
                 <!-- Section Divider -->
                 <hr class="mx-auto" style="border: 0; height: 3px; width: 150px; background-color: #0052CD; box-shadow: 0 2px 4px rgba(0,0,0,0.1);" />
                 <h2 class="text-center mt-4 text-dark fw-bold">Other Blogs</h2>
@@ -1254,20 +1029,20 @@
                   <!-- Card 1 -->
                   <div class="col-12 col-md-6 col-lg-4">
                     <div class="card border-0 shadow h-100">
-                      <a href="how-technology-is-revolutionizing-real-estate-app-development">
-                        <img src="img/real-estate-blog.jpg" class="card-img-top" alt="Blog 1. Travel App Development" style="height: 150px; object-fit: cover;">
+                      <a href="travel-app-development-in-tourism">
+                        <img src="img/blog/Blog 1.jpg" class="card-img-top" alt="Blog 1. Travel App Development" style="height: 150px; object-fit: cover;">
                       </a>
                       <div class="card-body d-flex flex-column">
-                        <span class="badge bg-primary text-white mb-2" style="width: fit-content;">Real Estate</span>
-                        <a href="how-technology-is-revolutionizing-real-estate-app-development" class="text-decoration-none">
-                          <h5 class="card-title text-dark fw-bold mb-3" style="font-size: 16px; line-height: 1.4;">How Technology is Revolutionizing Real Estate App Development</h5>
+                        <span class="badge bg-primary text-white mb-2" style="width: fit-content;">Travel</span>
+                        <a href="travel-app-development-in-tourism" class="text-decoration-none">
+                          <h5 class="card-title text-dark fw-bold mb-3" style="font-size: 16px; line-height: 1.4;">How Did Travel App Development Become Crucial In The Tourism Industry</h5>
                         </a>
                         <p class="small text-muted mb-0">
                           <i class="fa-solid fa-user me-1 text-black"></i> <span class="text-color-dark" style="font-size: 14px;"> Arham Jain</span>
                           <span class="mx-2">|</span>
-                          <i class="fa-solid fa-calendar me-1 text-black"></i>  <span class="text-color-dark" style="font-size: 14px;">17/01/2025</span>
+                          <i class="fa-solid fa-calendar me-1 text-black"></i>  <span class="text-color-dark" style="font-size: 14px;">18/06/2024</span>
                           <span class="mx-2">|</span>
-                          <a href="how-technology-is-revolutionizing-real-estate-app-development" class="text-primary text-decoration-underline"> <span style="font-size: 14px;">Read More</span></a>
+                          <a href="travel-app-development-in-tourism" class="text-primary text-decoration-underline"> <span style="font-size: 14px;">Read More</span></a>
                         </p>
                       </div>
                     </div>
@@ -1306,102 +1081,81 @@
         </div>
 
         <footer id="footer" class="bg-color-primary border-0 mt-0">
-			<div class="container container-xl-custom pt-4 pb-3">
-				<div class="row py-5">
-					<div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
-						<h4 class="ls-0">OUR ADDRESS</h4>
-						 <ul class="list list-unstyled">
-                            <li style="font-weight: bold; font-size: 14px;" class="mb-3">
+            <div class="container container-xl-custom pt-4 pb-3">
+                <div class="row py-5">
+                    <div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
+                        <h4 class="ls-0">OUR ADDRESS</h4>
+                        <ul class="list list-unstyled">
+                            <li style="font-weight: bold; font-size: 15px;" class="mb-3">
                                 SBS Nagar, Ludhiana
                             </li>
-                            <li style="font-weight: bold; font-size: 14px;" class="mb-3">
+                            <li style="font-weight: bold; font-size: 15px;" class="mb-3">
                                 Krishna Nagar, Ludhiana
                             </li>
-                            <li style="font-weight: bold; font-size: 14px;" class="mb-3">
+                            <li style="font-weight: bold; font-size: 15px;" class="mb-3">
                                 Chhattarpur, New Delhi
                             </li>
-                            <li style="font-weight: bold; font-size: 14px;" class="mb-3">
+                            <li style="font-weight: bold; font-size: 15px;" class="mb-3">
                                 Melbourne, Australia
                             </li>
                         </ul>
-					</div>
-					<div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
-						<h4 class="ls-0">OUR CONTACTS</h4>
-						<ul class="list-unstyled">
-							<li class="pb-1 mb-2">
-								<span class="d-block line-height-2">India</span>
-								<a href="tel:+919356385744"
-									class="text-color-light text-6 text-lg-4 text-xl-6 font-weight-bold">+91
-									9356385744</a>
-							</li>
-							<li>
-								<span class="d-block line-height-2">Australia</span>
-								<a href="tel:+919915571177"
-									class="text-color-light text-6 text-lg-4 text-xl-6 font-weight-bold">+61 412566906
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    </div>
+                    <div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
+                        <h4 class="ls-0">OUR CONTACTS</h4>
+                        <ul class="list-unstyled">
+                            <li class="pb-1 mb-2">
+                                <span class="d-block line-height-2">India</span>
+                                <a href="tel:+919356385744"
+                                    class="text-color-light text-6 text-lg-4 text-xl-6 font-weight-bold">+91
+                                    9356385744</a>
+                            </li>
+                            <li>
+                                <span class="d-block line-height-2">Australia</span>
+                                <a href="tel:+919915571177"
+                                    class="text-color-light text-6 text-lg-4 text-xl-6 font-weight-bold">+61 412566906
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
                         <h4 class="ls-0">USEFUL LINKS</h4>
-              <ul class="list-unstyled">
-                <li class="mb-1">
-                  <a
-                    href="custom-website-development-services"
-                    style="font-size: 14px"
-                    >Web Development</a
-                  >
-                </li>
-                <li class="mb-1">
-                  <a
-                    href="saas-application-development-services"
-                    style="font-size: 14px"
-                    >Saas Develoment</a
-                  >
-                </li>
-                <li class="mb-1">
-                  <a
-                    href="custom-mobile-application-development-services"
-                    style="font-size: 14px"
-                    >Mobile App Development</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="ecommerce-software-development-services"
-                    style="font-size: 14px"
-                    >E-Commerce</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="custom-software-development-services"
-                    style="font-size: 14px"
-                  >
-                    Software Development</a
-                  >
-                </li>
-              </ul>
+                        <ul class="list-unstyled">
+                            <li class="mb-1">
+                                <a href="">Web Development</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#">Saas Develoment</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#">Mobile App Development</a>
+                            </li>
+                            <li>
+                                <a href="#">E-Commerce</a>
+                            </li>
+                            <li>
+                                <a href="#"> Software Development</a>
+                            </li>
+                        </ul>
                     </div>
 
-					<div class="col-md-4 col-lg-2 mb-4 mb-md-0">
-						<h4 class="ls-0">ABOUT</h4>
-						<ul class="list-unstyled">
-							<li class="mb-1">
-								<a href="about-us" style="font-size: 14px;">About Us</a>
-							</li>
-							<li class="mb-1">
-								<a href="contact-us" style="font-size: 14px;">Send a Message</a>
-							</li>
-							<li class="mb-1">
-                              <a target="_blank" href="sitemap_index.xml" style="font-size: 14px;">Site Map</a>
+                    <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+                        <h4 class="ls-0">ABOUT</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-1">
+                                <a href="about-us">About Us</a>
                             </li>
-						</ul>
-					</div>
-					<div class="col-md-4 col-lg-2">
-						<h4 class="ls-0">SOCIAL MEDIA</h4>
-						<ul class="social-icons social-icons-clean custom-social-icons-icon-light">
-							<li>
+                            <li>
+                                <a href="contact-us">Send a Message</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="sitemap_index.xml">Site Map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <h4 class="ls-0">SOCIAL MEDIA</h4>
+                        <ul class="social-icons social-icons-clean custom-social-icons-icon-light">
+                            <li>
                                 <a href="https://wa.me/61412566906"><i class="fab fa-whatsapp"></i></a>
                              </li>
                             <li>
@@ -1410,31 +1164,30 @@
                             <li>
                                 <a href="https://www.instagram.com/ascentialabs/"><i class="fab fa-instagram"></i></a>
                            </li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright bg-color-primary">
-				<div class="container container-xl-custom pb-4">
-					<div class="row">
-						<div class="col">
-							<hr class="my-0 bg-color-light opacity-2">
-						</div>
-					</div>
-					<div class="row py-4 mt-2">
-						<div class="col-lg-12 text-center  mb-3 mb-lg-0">
-							<a href="/">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright bg-color-primary">
+                <div class="container container-xl-custom pb-4">
+                    <div class="row">
+                        <div class="col">
+                            <hr class="my-0 bg-color-light opacity-2">
+                        </div>
+                    </div>
+                    <div class="row py-4 mt-2">
+                        <div class="col-lg-12 text-center  mb-3 mb-lg-0">
+                            <a href="/">
                                 <img alt="ascentialabs" width="250" height="35" src="img\real-estate\Ascentia Logo (2) (1).png">
-                                <!-- <img alt="ascentialabs" width="235" height="65" src="img/ascentialabslogowhite1.png"> -->
                             </a>
-						</div>
-						<!-- <div class="col-lg-6 text-center text-lg-end">
-								<p class="text-3 mb-0">Porto IT Services. ©️ 2023. All Rights Reserved</p>
+                        </div>
+                        <!-- <div class="col-lg-6 text-center text-lg-end">
+								<p class="text-3 mb-0">Porto IT Services. © 2023. All Rights Reserved</p>
 							</div> -->
-					</div>
-				</div>
-			</div>
-		</footer>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- Vendor -->
