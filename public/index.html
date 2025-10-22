@@ -684,6 +684,37 @@
             padding: 0 40px;
             margin: 0 -40px;
         }
+
+        /* Uniform CTA button styling */
+        .btn-primary.custom-button {
+            padding: 12px 24px !important;
+            font-size: 16px !important;
+            border-radius: 25px !important;
+            min-width: 200px !important;
+            text-align: center !important;
+            background: linear-gradient(90deg, #0052CD 0%, #000000 100%) !important;
+            border: none !important;
+            color: white !important;
+        }
+
+        /* Fix placeholder text color to make it more readable */
+        .form-control::placeholder {
+            color: #666 !important;
+            opacity: 1 !important;
+        }
+
+        .form-control::-webkit-input-placeholder {
+            color: #666 !important;
+        }
+
+        .form-control::-moz-placeholder {
+            color: #666 !important;
+            opacity: 1 !important;
+        }
+
+        .form-control:-ms-input-placeholder {
+            color: #666 !important;
+        }
     </style>
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -1303,7 +1334,7 @@
 
             <section class="d-block d-md-none mb-3"
                 style="background-image: url(img/home\ page/home1.png); min-height: 400px; background-size: cover; background-position: center;">
-                <div class="container-fluid h-100 py-4">
+                <div class="container-fluid h-100 ">
                     <div class="text-center px-3">
                         <!-- Main Content -->
                         <h1 class="mb-4 pt-4 text-white" style="font-size: 26px; font-weight: bold; line-height: 1.2;">
@@ -1370,7 +1401,7 @@
                 style="background-image: url(img/home\ page/home1a.png); min-height: 100vh;"
                 aria-label="Image of the earth taken from space">
                 <div class="container-fluid h-100">
-                    <div class="row h-100 align-items-center justify-content-center" style="padding-top: 100px;">
+                    <div class="row  align-items-center justify-content-center" style="padding-top: 150px;">
                         <!-- Left Section -->
                         <div class="col-md-5 text-center px-4">
                             <h1 class="appear-animation text-white mb-4" data-appear-animation="fadeInLeftShorter"
